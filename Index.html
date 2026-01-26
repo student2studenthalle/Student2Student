@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijles op Maat | Jouw Naam</title>
+    <title>Bijles door Dawoud | Geneeskunde Student</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,10 +11,10 @@
 
     <header>
         <nav>
-            <div class="logo">Bijles<span>Naam</span></div>
+            <div class="logo">Dawoud<span>Bijles</span></div>
             <ul>
-                <li><a href="#over">Over mij</a></li>
-                <li><a href="#werkwijze">Werkwijze</a></li>
+                <li><a href="#over">Mijn Verhaal</a></li>
+                <li><a href="#tarieven">Tarieven</a></li>
                 <li><a href="#contact" class="btn-small">Contact</a></li>
             </ul>
         </nav>
@@ -22,9 +22,9 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Betere cijfers, minder stress.</h1>
-            <p>Persoonlijke bijles in [Vakken] voor middelbare scholieren en studenten.</p>
-            <a href="#contact" class="btn-main">Plan een kennismaking</a>
+            <h1>Van Examencommissie naar Geneeskunde.</h1>
+            <p>Persoonlijke bijles Biologie voor het 1ste t/m 4de middelbaar.</p>
+            <a href="#contact" class="btn-main">Start vandaag nog</a>
         </div>
     </section>
 
@@ -32,48 +32,54 @@
         <h2>Over mij</h2>
         <div class="grid">
             <div class="text">
-                <p>Hoi! Ik ben [Naam], een enthousiaste bijlesgever met een passie voor [Vak]. Ik help leerlingen niet alleen de stof te begrijpen, maar ook om weer zelfvertrouwen te krijgen in hun eigen kunnen.</p>
+                <p>Ik ben <strong>Dawoud</strong>, 2de bachelor student Geneeskunde. Mijn weg in het secundair verliep niet vlot; ik ben in het 5de jaar blijven zitten. Dankzij zelfstudie ben ik geslaagd via de examencommissie.</p>
+                <p>Ik begrijp als geen ander hoe het is om vast te lopen. Daarom bied ik empathische ondersteuning die verder gaat dan alleen cijfers: we focussen ook op zelfvertrouwen en studievaardigheden.</p>
             </div>
             <div class="stats">
-                <div class="stat-card"><strong>5+</strong> jaar ervaring</div>
-                <div class="stat-card"><strong>100%</strong> inzet</div>
+                <div class="stat-card"><strong>1.5 jaar</strong> ervaring</div>
+                <div class="stat-card"><strong>Bachelor</strong> Geneeskunde</div>
             </div>
         </div>
     </section>
 
-    <section id="werkwijze" class="bg-light">
+    <section id="tarieven" class="bg-light">
         <div class="container">
-            <h2>Hoe ik help</h2>
-            <div class="grid-three">
+            <h2>Tarieven</h2>
+            <div class="grid">
                 <div class="card">
-                    <h3>Diagnose</h3>
-                    <p>We kijken waar de knelpunten precies liggen en maken een plan.</p>
+                    <h3>Bijles aan huis</h3>
+                    <p>Ik kom naar je toe voor maximale focus in je eigen omgeving.</p>
+                    <p class="price">€24 / uur</p>
                 </div>
                 <div class="card">
-                    <h3>Uitleg</h3>
-                    <p>Complexe stof simpel uitgelegd op het tempo van de leerling.</p>
-                </div>
-                <div class="card">
-                    <h3>Oefenen</h3>
-                    <p>Samen opgaven maken totdat de leerling het zelfstandig kan.</p>
+                    <h3>Bijles op locatie / online</h3>
+                    <p>Standaard tarief voor ondersteuning op maat.</p>
+                    <p class="price">€20 / uur</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="container">
+        <h2>Wat anderen zeggen</h2>
+        <p>Bekijk mijn reviews op Google Maps:</p>
+        <div class="maps-placeholder">
+            <a href="LINK_NAAR_JOUW_MAPS_PAGINA" target="_blank" class="btn-main">Bekijk Google Reviews</a>
         </div>
     </section>
 
     <section id="contact" class="container">
-        <h2>Laten we beginnen</h2>
-        <p>Stuur een berichtje voor een vrijblijvend intakegesprek.</p>
-        <form>
-            <input type="text" placeholder="Je naam" required>
-            <input type="email" placeholder="Je e-mailadres" required>
-            <textarea placeholder="Waar kan ik mee helpen?"></textarea>
-            <button type="submit" class="btn-main">Verstuur bericht</button>
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/student2studenthalle@gmail.com" method="POST">
+            <input type="text" name="naam" placeholder="Naam leerling/ouder" required>
+            <input type="email" name="email" placeholder="E-mailadres" required>
+            <textarea name="bericht" placeholder="Hoe kan ik je helpen met Biologie?"></textarea>
+            <button type="submit" class="btn-main">Verstuur aanvraag</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Bijles [Naam]. Alle rechten voorbehouden.</p>
+        <p>&copy; 2026 Dawoud - Student 2de bachelor Geneeskunde.</p>
     </footer>
 
 </body>
