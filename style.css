@@ -19,7 +19,7 @@ body {
 .container { padding: 80px 10%; max-width: 1200px; margin: auto; }
 .bg-light { background: var(--light); }
 
-/* Header Styling AANGEPAST */
+/* Header Styling */
 header { 
     padding: 15px 10%; 
     display: flex; 
@@ -41,7 +41,7 @@ header {
 }
 .logo span { color: var(--secondary); }
 
-/* Rechterkant header (Menu + Socials) */
+/* Header Rechts (Menu + Socials) */
 .header-right {
     display: flex;
     align-items: center;
@@ -52,12 +52,12 @@ nav ul { display: flex; list-style: none; gap: 20px; align-items: center; }
 nav a { text-decoration: none; color: var(--text); font-weight: 500; }
 nav a:hover { color: var(--primary); }
 
-/* NIEUW: Social icons in de header */
+/* Social icons in header */
 .header-socials {
     display: flex;
     gap: 15px;
     padding-left: 20px;
-    border-left: 2px solid #eee; /* Klein streepje tussen menu en icons */
+    border-left: 2px solid #eee;
 }
 
 .header-socials a {
@@ -71,15 +71,13 @@ nav a:hover { color: var(--primary); }
     transform: translateY(-2px);
 }
 
-
-/* Hero Styling - NIEUWE AFBEELDING */
+/* Hero met nieuwe foto */
 .hero { 
     height: 80vh; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
     text-align: center; 
-    /* Nieuwe, warmere foto van studenten die samenwerken */
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop') center/cover; 
     color: white; 
@@ -108,7 +106,7 @@ nav a:hover { color: var(--primary); }
     text-decoration: none; 
 }
 
-/* Grids */
+/* Grid Layouts */
 .grid { display: grid; gap: 40px; margin-top: 40px; grid-template-columns: 2fr 1fr; }
 .card { 
     background: white; 
@@ -126,7 +124,6 @@ nav a:hover { color: var(--primary); }
     text-align: center; 
 }
 
-/* Prijzen en Extra's */
 .price { 
     font-size: 1.8rem; 
     font-weight: bold; 
@@ -142,12 +139,12 @@ nav a:hover { color: var(--primary); }
     margin-top: 20px; 
 }
 
-/* Contactformulier */
+/* Formulier */
 form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; }
 input, textarea, select { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
 textarea { height: 120px; resize: vertical; }
 
-/* Footer Styling */
+/* Footer */
 footer { 
     background: #f3f4f6; 
     color: var(--dark); 
@@ -174,7 +171,7 @@ footer {
 
 .footer-section p { color: #4b5563; margin-bottom: 5px; }
 
-/* Social Media Iconen (Blokjes in footer) */
+/* Footer Social Icons (Gekleurde blokjes) */
 .social-icons { display: flex; gap: 15px; }
 .icon {
     display: flex; align-items: center; justify-content: center;
@@ -192,12 +189,11 @@ footer {
     font-size: 0.8rem; color: #9ca3af;
 }
 
-/* Mobiel aanpassingen */
+/* Mobiel */
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.2rem; }
     
-    /* Header aanpassingen voor mobiel */
     header { flex-direction: column; gap: 20px; padding: 20px; }
     .header-right { flex-direction: column; gap: 20px; }
     .header-socials { border-left: none; padding-left: 0; }
