@@ -19,7 +19,6 @@ body {
 .container { padding: 80px 10%; max-width: 1200px; margin: auto; }
 .bg-light { background: var(--light); }
 
-/* Header Styling */
 header { 
     padding: 15px 10%; 
     display: flex; 
@@ -32,7 +31,6 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
 }
 
-/* Logo */
 .logo { 
     font-size: 1.8rem; 
     font-weight: 800; 
@@ -41,18 +39,39 @@ header {
 }
 .logo span { color: var(--secondary); }
 
-/* Header Rechts (Menu + Socials) */
 .header-right {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
+/* NIEUW: Taal Wisselaar Styling */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 2px solid #eee;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    color: var(--text);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.lang-switch a:hover { opacity: 1; color: var(--primary); }
+.lang-switch a.active { opacity: 1; color: var(--primary); }
+.lang-switch span { color: #ccc; }
+
 nav ul { display: flex; list-style: none; gap: 20px; align-items: center; }
 nav a { text-decoration: none; color: var(--text); font-weight: 500; }
 nav a:hover { color: var(--primary); }
 
-/* Social icons in header */
 .header-socials {
     display: flex;
     gap: 15px;
@@ -66,12 +85,8 @@ nav a:hover { color: var(--primary); }
     transition: color 0.3s, transform 0.2s;
 }
 
-.header-socials a:hover {
-    color: var(--primary);
-    transform: translateY(-2px);
-}
+.header-socials a:hover { color: var(--primary); transform: translateY(-2px); }
 
-/* Hero met nieuwe foto */
 .hero { 
     height: 80vh; 
     display: flex; 
@@ -85,7 +100,6 @@ nav a:hover { color: var(--primary); }
 }
 .hero h1 { font-size: 3rem; margin-bottom: 20px; }
 
-/* Knoppen */
 .btn-main { 
     background: var(--primary); 
     color: white; 
@@ -106,7 +120,6 @@ nav a:hover { color: var(--primary); }
     text-decoration: none; 
 }
 
-/* Grid Layouts */
 .grid { display: grid; gap: 40px; margin-top: 40px; grid-template-columns: 2fr 1fr; }
 .card { 
     background: white; 
@@ -139,12 +152,10 @@ nav a:hover { color: var(--primary); }
     margin-top: 20px; 
 }
 
-/* Formulier */
 form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; }
 input, textarea, select { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
 textarea { height: 120px; resize: vertical; }
 
-/* Footer */
 footer { 
     background: #f3f4f6; 
     color: var(--dark); 
@@ -171,7 +182,6 @@ footer {
 
 .footer-section p { color: #4b5563; margin-bottom: 5px; }
 
-/* Footer Social Icons (Gekleurde blokjes) */
 .social-icons { display: flex; gap: 15px; }
 .icon {
     display: flex; align-items: center; justify-content: center;
@@ -189,7 +199,6 @@ footer {
     font-size: 0.8rem; color: #9ca3af;
 }
 
-/* Mobiel */
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.2rem; }
@@ -197,6 +206,7 @@ footer {
     header { flex-direction: column; gap: 20px; padding: 20px; }
     .header-right { flex-direction: column; gap: 20px; }
     .header-socials { border-left: none; padding-left: 0; }
+    .lang-switch { margin-bottom: 10px; } /* Zorgt dat de taal mooi staat op mobiel */
 
     .footer-container { flex-direction: column; text-align: center; }
     .social-icons { justify-content: center; }
