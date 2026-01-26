@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijles door Dawoud | Student2Student</title>
+    <title>Bijles Wiskunde & Wetenschappen | Student2Student</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        .social-links a { text-decoration: none; }
+    </style>
 </head>
 <body>
 
     <header>
         <nav>
             <div class="logo">Student<span>2</span>Student</div>
-            
             <ul>
-                <li><a href="#over">Mijn Verhaal</a></li>
+                <li><a href="#over">Over mij</a></li>
                 <li><a href="#tarieven">Tarieven</a></li>
                 <li><a href="#contact" class="btn-small">Contact</a></li>
             </ul>
@@ -24,7 +26,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Van Examencommissie naar Geneeskunde.</h1>
-            <p>Persoonlijke bijles Biologie voor het 1ste t/m 4de middelbaar.</p>
+            <p>Persoonlijke bijles in <strong>Wiskunde, Fysica, Chemie & Biologie</strong>.</p>
+            <p style="font-size: 0.9rem; margin-top: -10px; opacity: 0.9;">Voor het 1ste t/m 4de middelbaar</p>
             <a href="#contact" class="btn-main">Start vandaag nog</a>
         </div>
     </section>
@@ -34,10 +37,10 @@
         <div class="grid">
             <div class="text">
                 <p>Ik ben <strong>Dawoud</strong>, 2de bachelor student Geneeskunde. Mijn weg in het secundair verliep niet vlot; ik ben in het 5de jaar blijven zitten. Dankzij zelfstudie ben ik geslaagd via de examencommissie.</p>
-                <p>Ik begrijp als geen ander hoe het is om vast te lopen. Daarom bied ik empathische ondersteuning die verder gaat dan alleen cijfers: we focussen ook op zelfvertrouwen en studievaardigheden.</p>
+                <p>Ik geef niet alleen <strong>Biologie</strong>, maar help je ook graag met de exacte vakken waar veel leerlingen op vastlopen: <strong>Wiskunde, Fysica en Chemie</strong>. Ik bied empathische ondersteuning met focus op zelfvertrouwen en studievaardigheden.</p>
             </div>
             <div class="stats">
-                <div class="stat-card"><strong>1.5 jaar</strong> ervaring</div>
+                <div class="stat-card"><strong>Alle Exacte</strong> Vakken</div>
                 <div class="stat-card"><strong>Bachelor</strong> Geneeskunde</div>
             </div>
         </div>
@@ -65,7 +68,7 @@
         <h2>Wat anderen zeggen</h2>
         <p>Bekijk mijn reviews op Google Maps:</p>
         <div class="maps-placeholder">
-            <a href="#" target="_blank" class="btn-main">Bekijk Google Reviews</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kriekenveldstraat+8+1500+Halle" target="_blank" class="btn-main">Bekijk Google Reviews</a>
         </div>
     </section>
 
@@ -74,13 +77,31 @@
         <form action="https://formspree.io/f/student2studenthalle@gmail.com" method="POST">
             <input type="text" name="naam" placeholder="Naam leerling/ouder" required>
             <input type="email" name="email" placeholder="E-mailadres" required>
-            <textarea name="bericht" placeholder="Hoe kan ik je helpen met Biologie?"></textarea>
+            <select name="vak" style="padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; margin-bottom: 10px;">
+                <option value="" disabled selected>Kies een vak...</option>
+                <option value="Wiskunde">Wiskunde</option>
+                <option value="Fysica">Fysica</option>
+                <option value="Chemie">Chemie</option>
+                <option value="Biologie">Biologie</option>
+                <option value="Anders">Anders / Combinatie</option>
+            </select>
+            <textarea name="bericht" placeholder="Waar loop je tegenaan?"></textarea>
             <button type="submit" class="btn-main">Verstuur aanvraag</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Dawoud - Student2Student.</p>
+        <div class="footer-content">
+            <p>© 2026 Dawoud - Student2Student.</p>
+            
+            <p class="address">📍 Kriekenveldstraat 8, 1500 Halle</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/student2studenthalle/" target="_blank">Instagram</a>
+                <span>|</span>
+                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank">Facebook</a>
+            </div>
+        </div>
     </footer>
 
 </body>
