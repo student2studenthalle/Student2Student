@@ -32,19 +32,14 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
 }
 
-/* Tekst Logo Styling */
 .logo { 
     font-size: 1.8rem; 
     font-weight: 800; 
     color: var(--primary); 
     letter-spacing: -0.5px;
 }
+.logo span { color: var(--secondary); }
 
-.logo span { 
-    color: var(--secondary); 
-}
-
-/* Navigatie */
 nav ul { display: flex; list-style: none; gap: 20px; align-items: center; }
 nav a { text-decoration: none; color: var(--text); font-weight: 500; }
 nav a:hover { color: var(--primary); }
@@ -61,7 +56,6 @@ nav a:hover { color: var(--primary); }
     color: white; 
     padding: 0 20px;
 }
-
 .hero h1 { font-size: 3rem; margin-bottom: 20px; }
 
 /* Knoppen */
@@ -85,9 +79,8 @@ nav a:hover { color: var(--primary); }
     text-decoration: none; 
 }
 
-/* Grid Layouts */
+/* Grids */
 .grid { display: grid; gap: 40px; margin-top: 40px; grid-template-columns: 2fr 1fr; }
-
 .card { 
     background: white; 
     padding: 30px; 
@@ -95,7 +88,6 @@ nav a:hover { color: var(--primary); }
     box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
     border-top: 4px solid var(--primary);
 }
-
 .stat-card { 
     background: var(--primary); 
     color: white; 
@@ -105,7 +97,7 @@ nav a:hover { color: var(--primary); }
     text-align: center; 
 }
 
-/* Prijzen en Reviews */
+/* Prijzen en Extra's */
 .price { 
     font-size: 1.8rem; 
     font-weight: bold; 
@@ -113,7 +105,6 @@ nav a:hover { color: var(--primary); }
     margin-top: 15px; 
     display: block;
 }
-
 .maps-placeholder { 
     text-align: center; 
     padding: 40px; 
@@ -124,14 +115,83 @@ nav a:hover { color: var(--primary); }
 
 /* Contactformulier */
 form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; }
-input, textarea { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
+input, textarea, select { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
 textarea { height: 120px; resize: vertical; }
 
-footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+/* NIEUWE FOOTER STYLING (Zoals je voorbeeld) */
+footer { 
+    background: #f3f4f6; /* Lichtgrijze achtergrond zoals voorbeeld */
+    color: var(--dark); 
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section h3 {
+    color: #111827; /* Donkere titel */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--secondary); /* Groen lijntje onder titel */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    color: #4b5563;
+    margin-bottom: 5px;
+}
+
+/* Social Media Iconen (Gekleurde blokjes) */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px; /* Licht afgeronde hoeken */
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Specifieke kleuren voor Insta en FB */
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
 
 /* Mobiel */
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.2rem; }
     header { flex-direction: column; gap: 15px; }
+    .footer-container { flex-direction: column; text-align: center; }
+    .social-icons { justify-content: center; }
 }
