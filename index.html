@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="#over">Over mij</a></li>
                     <li><a href="#tarieven">Tarieven</a></li>
-                    <li><a href="#contact" class="btn-small">Contact</a></li>
+                    <li><a href="#vacatures">Vacatures</a></li> <li><a href="#contact" class="btn-small">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-socials">
@@ -86,8 +86,10 @@
     </section>
 
     <section id="contact" class="container">
-        <h2>Contact</h2>
+        <h2>Contact (Voor ouders/leerlingen)</h2>
         <form action="https://formspree.io/f/mvzabzqg" method="POST">
+            <input type="hidden" name="_subject" value="Nieuwe Bijles Aanvraag (Klant)">
+            
             <input type="text" name="naam" placeholder="Naam leerling/ouder" required>
             <input type="email" name="email" placeholder="E-mailadres" required>
             <input type="tel" name="telefoon" placeholder="Telefoonnummer (optioneel)">
@@ -102,6 +104,24 @@
             <textarea name="message" placeholder="Waar loop je tegenaan?"></textarea>
             <button type="submit" class="btn-main">Verstuur aanvraag</button>
         </form>
+    </section>
+
+    <section id="vacatures" class="bg-light">
+        <div class="container">
+            <h2>Word ook bijlesgever! 🎓</h2>
+            <p>Ben jij student (Universiteit/Hogeschool) en sterk in wiskunde of wetenschappen? Sluit je aan bij Student2Student. Verdien flexibel bij en help anderen slagen.</p>
+            
+            <form action="https://formspree.io/f/mvzabzqg" method="POST" style="margin-top: 20px;">
+                <input type="hidden" name="_subject" value="Nieuwe Sollicitatie (Bijlesgever)">
+                
+                <input type="text" name="naam_sollicitant" placeholder="Jouw naam" required>
+                <input type="email" name="email_sollicitant" placeholder="Jouw e-mailadres" required>
+                <input type="text" name="studierichting" placeholder="Welke studie doe je nu?" required>
+                <input type="text" name="vakken_geven" placeholder="Welke vakken wil je geven?" required>
+                <textarea name="motivatie" placeholder="Korte motivatie of ervaring..."></textarea>
+                <button type="submit" class="btn-small" style="background-color: #1e293b; border: none; font-size: 1rem; cursor: pointer;">Solliciteer nu</button>
+            </form>
+        </div>
     </section>
 
     <footer>
