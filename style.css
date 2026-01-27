@@ -243,3 +243,68 @@ footer {
     /* WhatsApp knop iets kleiner op mobiel */
     .whatsapp-float { width: 50px; height: 50px; font-size: 25px; bottom: 20px; right: 20px; }
 }
+/* =========================================
+   MOBIELE VERSIE (Responsive Fix)
+   ========================================= */
+@media (max-width: 900px) {
+    
+    /* 1. Header wordt hoger en stapelt alles onder elkaar */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 15px;
+        position: relative; /* Zorgt dat hij niet vreemd gaat zweven */
+    }
+
+    /* 2. Logo in het midden */
+    .logo {
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+
+    /* 3. Rechterkant (Menu + Socials) ook stapelen */
+    .header-right {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* 4. Het menu zelf: knoppen onder elkaar of mooi verdeeld */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Laat knoppen naar de volgende regel gaan als het niet past */
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    /* 5. Knoppen iets groter maken voor vingers */
+    nav ul li a {
+        padding: 10px 15px;
+        background-color: #f1f5f9; /* Lichtgrijze achtergrond voor duidelijkheid */
+        border-radius: 8px;
+        display: block; /* Zorgt dat het hele vlak klikbaar is */
+    }
+
+    /* De blauwe contact knop mag blauw blijven */
+    nav ul li a.btn-small {
+        background-color: #2563eb;
+        color: white;
+    }
+
+    /* 6. Taalwissel en Socials centreren */
+    .lang-switch, .header-socials {
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    /* Extra: Hero tekst op mobiel iets kleiner zodat het past */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
