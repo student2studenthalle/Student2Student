@@ -1,6 +1,6 @@
 :root {
-    --primary: #2563eb;
-    --secondary: #10b981;
+    --primary: #2563eb;    /* Blauw */
+    --secondary: #10b981;  /* Groen */
     --dark: #1e293b;
     --light: #f8fafc;
     --text: #334155;
@@ -19,6 +19,7 @@ body {
 .container { padding: 80px 10%; max-width: 1200px; margin: auto; }
 .bg-light { background: var(--light); }
 
+/* --- HEADER --- */
 header { 
     padding: 15px 10%; 
     display: flex; 
@@ -45,7 +46,7 @@ header {
     gap: 30px;
 }
 
-/* NIEUW: Taal Wisselaar Styling */
+/* Taal Wisselaar */
 .lang-switch {
     display: flex;
     align-items: center;
@@ -63,7 +64,6 @@ header {
     opacity: 0.6;
     transition: 0.3s;
 }
-
 .lang-switch a:hover { opacity: 1; color: var(--primary); }
 .lang-switch a.active { opacity: 1; color: var(--primary); }
 .lang-switch span { color: #ccc; }
@@ -78,15 +78,14 @@ nav a:hover { color: var(--primary); }
     padding-left: 20px;
     border-left: 2px solid #eee;
 }
-
 .header-socials a {
     color: var(--text);
     font-size: 1.3rem;
     transition: color 0.3s, transform 0.2s;
 }
-
 .header-socials a:hover { color: var(--primary); transform: translateY(-2px); }
 
+/* --- HERO --- */
 .hero { 
     height: 80vh; 
     display: flex; 
@@ -100,6 +99,7 @@ nav a:hover { color: var(--primary); }
 }
 .hero h1 { font-size: 3rem; margin-bottom: 20px; }
 
+/* --- KNOPPEN --- */
 .btn-main { 
     background: var(--primary); 
     color: white; 
@@ -120,6 +120,33 @@ nav a:hover { color: var(--primary); }
     text-decoration: none; 
 }
 
+/* --- WHATSAPP KNOP (NIEUW) --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1);
+}
+
+/* --- GRID & CARDS --- */
 .grid { display: grid; gap: 40px; margin-top: 40px; grid-template-columns: 2fr 1fr; }
 .card { 
     background: white; 
@@ -152,10 +179,12 @@ nav a:hover { color: var(--primary); }
     margin-top: 20px; 
 }
 
+/* --- FORMULIER --- */
 form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 40px auto; }
 input, textarea, select { padding: 14px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
 textarea { height: 120px; resize: vertical; }
 
+/* --- FOOTER --- */
 footer { 
     background: #f3f4f6; 
     color: var(--dark); 
@@ -179,7 +208,6 @@ footer {
     display: inline-block;
     padding-bottom: 5px;
 }
-
 .footer-section p { color: #4b5563; margin-bottom: 5px; }
 
 .social-icons { display: flex; gap: 15px; }
@@ -199,6 +227,7 @@ footer {
     font-size: 0.8rem; color: #9ca3af;
 }
 
+/* --- MOBIEL --- */
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.2rem; }
@@ -206,32 +235,11 @@ footer {
     header { flex-direction: column; gap: 20px; padding: 20px; }
     .header-right { flex-direction: column; gap: 20px; }
     .header-socials { border-left: none; padding-left: 0; }
-    .lang-switch { margin-bottom: 10px; } /* Zorgt dat de taal mooi staat op mobiel */
+    .lang-switch { margin-bottom: 10px; }
 
     .footer-container { flex-direction: column; text-align: center; }
     .social-icons { justify-content: center; }
+    
+    /* WhatsApp knop iets kleiner op mobiel */
+    .whatsapp-float { width: 50px; height: 50px; font-size: 25px; bottom: 20px; right: 20px; }
 }
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s;
-}
-
-.whatsapp-float:hover {
-    background-color: #20ba5a;
-    transform: scale(1.1);
-}
-
