@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijles Wiskunde & Wetenschappen | Student2Student</title>
-    
     <link rel="stylesheet" href="style.css">
-    
     <link rel="icon" type="image/png" href="favicon.png">
-
-    <meta name="description" content="Persoonlijke bijles in Halle voor Wiskunde, Fysica, Chemie & Biologie. Gegeven door Dawoud, student Geneeskunde. Voor 1ste t/m 4de middelbaar.">
-    <meta name="keywords" content="Bijles Halle, Bijles Wiskunde Halle, Bijles Fysica, Bijles Chemie, Student2Student, Dawoud Bijles, Huiswerkbegeleiding Halle, Examencommissie">
+    <meta name="description" content="Persoonlijke bijles in Halle voor Wiskunde, Fysica, Chemie & Biologie. Gegeven door Dawoud, student Geneeskunde.">
+    <meta name="keywords" content="Bijles Halle, Bijles Wiskunde Halle, Bijles Fysica, Bijles Chemie, Student2Student, Dawoud Bijles">
     <meta name="author" content="Dawoud - Student2Student">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,14 +16,12 @@
 
     <header>
         <div class="logo">Student<span>2</span>Student</div>
-        
         <div class="header-right">
             <div class="lang-switch">
                 <a href="index.html" class="active">NL</a>
                 <span>|</span>
                 <a href="fr.html">FR</a>
             </div>
-
             <nav>
                 <ul>
                     <li><a href="#over">Over mij</a></li>
@@ -35,14 +29,9 @@
                     <li><a href="#contact" class="btn-small">Contact</a></li>
                 </ul>
             </nav>
-            
             <div class="header-socials">
-                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </header>
@@ -99,4 +88,52 @@
     <section id="contact" class="container">
         <h2>Contact</h2>
         <form action="https://formspree.io/f/mvzabzqg" method="POST">
-            <input type="
+            <input type="text" name="naam" placeholder="Naam leerling/ouder" required>
+            <input type="email" name="email" placeholder="E-mailadres" required>
+            <input type="tel" name="telefoon" placeholder="Telefoonnummer (optioneel)">
+            <select name="vak">
+                <option value="" disabled selected>Kies een vak...</option>
+                <option value="Wiskunde">Wiskunde</option>
+                <option value="Fysica">Fysica</option>
+                <option value="Chemie">Chemie</option>
+                <option value="Biologie">Biologie</option>
+                <option value="Anders">Anders / Combinatie</option>
+            </select>
+            <textarea name="message" placeholder="Waar loop je tegenaan?"></textarea>
+            <button type="submit" class="btn-main">Verstuur aanvraag</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Locatie & Contact</h3>
+                <p><strong>Student2Student</strong></p>
+                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
+                <p>1500 Halle</p>
+                <p style="margin-top: 15px;">
+                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
+                        0465 97 10 99
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Volg mij</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Dawoud - Student2Student.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
