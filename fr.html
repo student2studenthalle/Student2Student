@@ -11,6 +11,13 @@
     <meta name="author" content="Dawoud - Student2Student">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; margin-top: 40px; }
+        .step-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .step-card i { font-size: 2.5rem; color: #2563eb; margin-bottom: 20px; }
+        .step-card h3 { margin-bottom: 10px; color: #1e293b; }
+    </style>
 </head>
 <body>
 
@@ -25,8 +32,10 @@
             <nav>
                 <ul>
                     <li><a href="#over">À propos</a></li>
+                    <li><a href="#werkwijze">Méthode</a></li>
                     <li><a href="#tarieven">Tarifs</a></li>
-                    <li><a href="#vacatures">Jobs</a></li> <li><a href="#contact" class="btn-small">Contact</a></li>
+                    <li><a href="#vacatures">Jobs</a></li>
+                    <li><a href="#contact" class="btn-small">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-socials">
@@ -52,4 +61,126 @@
                 <p>Je suis <strong>Dawoud</strong>, étudiant en 2ème bachelier Médecine. Mon parcours secondaire n'a pas été simple ; j'ai doublé ma 5ème année. Grâce à l'auto-apprentissage, j'ai réussi via le Jury Central.</p>
                 <p>Je ne donne pas seulement cours de <strong>Biologie</strong>, j'aide aussi pour les matières exactes où beaucoup d'élèves bloquent : <strong>Mathématiques, Physique et Chimie</strong>. J'offre un soutien empathique axé sur la confiance en soi et la méthode de travail.</p>
             </div>
-            <div class="
+            <div class="stats">
+                <div class="stat-card"><strong>1.5 an</strong> d'expérience</div>
+                <div class="stat-card"><strong>Bachelier</strong> Médecine</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="werkwijze" class="bg-light">
+        <div class="container">
+            <h2 style="text-align: center;">Comment ça marche ?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <i class="fas fa-pen-to-square"></i>
+                    <h3>1. Demande</h3>
+                    <p>Remplissez le formulaire avec la matière et vos difficultés.</p>
+                </div>
+                <div class="step-card">
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>2. Contact</h3>
+                    <p>Je vous contacte sous 24h pour discuter de vos besoins.</p>
+                </div>
+                <div class="step-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>3. Démarrage</h3>
+                    <p>On planifie le premier cours (chez vous ou chez moi) et c'est parti !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarieven" class="container">
+        <h2>Tarifs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cours à domicile</h3>
+                <p>Je me déplace chez vous pour une concentration maximale.</p>
+                <p class="price">€24 / h</p>
+            </div>
+            <div class="card">
+                <h3>Cours chez moi</h3>
+                <p>Vous êtes les bienvenus chez moi pour étudier au calme.</p>
+                <p class="price">€20 / h</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="container">
+        <h2>Avis</h2>
+        <p>Voir mes avis sur Google Maps :</p>
+        <div class="maps-placeholder">
+            <a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-main">Voir les avis Google</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact (Parents/Élèves)</h2>
+        <form action="https://formspree.io/f/mvzabzqg" method="POST">
+            <input type="hidden" name="_subject" value="Nouvelle Demande de Cours (Client)">
+            <input type="text" name="naam" placeholder="Nom élève/parent" required>
+            <input type="email" name="email" placeholder="Adresse e-mail" required>
+            <input type="tel" name="telefoon" placeholder="Numéro de téléphone (optionnel)">
+            <select name="vak">
+                <option value="" disabled selected>Choisissez une matière...</option>
+                <option value="Mathématiques">Mathématiques</option>
+                <option value="Physique">Physique</option>
+                <option value="Chimie">Chimie</option>
+                <option value="Biologie">Biologie</option>
+                <option value="Autre">Autre / Combinaison</option>
+            </select>
+            <textarea name="message" placeholder="Quelles sont vos difficultés ?"></textarea>
+            <button type="submit" class="btn-main">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <section id="vacatures" class="bg-light">
+        <div class="container">
+            <h2>Devenez tuteur ! 🎓</h2>
+            <p>Vous êtes étudiant (Université/Haute École) et fort en maths ou sciences ? Rejoignez Student2Student.</p>
+            <form action="https://formspree.io/f/mvzabzqg" method="POST" style="margin-top: 20px;">
+                <input type="hidden" name="_subject" value="Nouvelle Candidature (Tuteur)">
+                <input type="text" name="naam_sollicitant" placeholder="Votre nom" required>
+                <input type="email" name="email_sollicitant" placeholder="Votre e-mail" required>
+                <input type="text" name="studierichting" placeholder="Vos études actuelles ?" required>
+                <input type="text" name="vakken_geven" placeholder="Quelles matières voulez-vous donner ?" required>
+                <textarea name="motivatie" placeholder="Courte motivation ou expérience..."></textarea>
+                <button type="submit" class="btn-small" style="background-color: #1e293b; border: none; font-size: 1rem; cursor: pointer;">Postuler maintenant</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Lieu & Contact</h3>
+                <p><strong>Student2Student</strong></p>
+                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
+                <p>1500 Halle</p>
+                <p style="margin-top: 15px;">
+                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
+                        0465 97 10 99
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-moi</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Dawoud - Student2Student. | <a href="privacy.html" style="color: inherit;">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
