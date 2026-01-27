@@ -4,27 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina niet gevonden | Student2Student</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; background-color: #f8fafc; }
-        .error-container { background: white; padding: 50px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 500px; margin: 20px; }
-        h1 { color: #2563eb; font-size: 4rem; margin-bottom: 10px; }
-        h2 { margin-bottom: 20px; color: #1e293b; }
-        p { margin-bottom: 30px; color: #64748b; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f1f5f9; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            padding: 20px;
+            color: #1e293b;
+        }
+
+        .error-container { 
+            background: white; 
+            padding: 60px 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+            text-align: center; 
+            max-width: 500px; 
+            width: 100%; 
+            border: 1px solid #e2e8f0;
+        }
+
+        /* LOGO: Hier gebruiken we nu favicon.png omdat dat je grote bestand is */
+        .logo-img {
+            width: 120px; 
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 { 
+            font-size: 4rem; 
+            color: #2563eb; 
+            font-weight: 800;
+            margin-bottom: 0px;
+            line-height: 1;
+        }
+
+        h2 { 
+            font-size: 1.5rem; 
+            margin-bottom: 15px; 
+            color: #1e293b; 
+        }
+
+        p { 
+            margin-bottom: 40px; 
+            color: #64748b; 
+            line-height: 1.6;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .btn-blue {
+            background-color: #2563eb;
+            color: white;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-dark {
+            background-color: #1e293b;
+            color: white;
+            box-shadow: 0 4px 10px rgba(30, 41, 59, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
     </style>
 </head>
 <body>
 
     <div class="error-container">
+        <img src="favicon.png" alt="Student2Student Logo" class="logo-img">
+        
         <h1>404</h1>
         <h2>Oeps! / Oups !</h2>
-        <p>Deze pagina bestaat niet. <br> Cette page n'existe pas.</p>
         
-        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-            <a href="index.html" class="btn-main">Terug naar Home (NL)</a>
-            <a href="fr.html" class="btn-main" style="background-color: #1e293b;">Retour Accueil (FR)</a>
+        <p>
+            De pagina die je zoekt bestaat niet.<br>
+            La page que vous recherchez n'existe pas.
+        </p>
+        
+        <div class="btn-container">
+            <a href="https://student2studenthalle.github.io/Student2Student/index.html" class="btn btn-blue">
+                Terug naar Home (NL)
+            </a>
+            <a href="https://student2studenthalle.github.io/Student2Student/fr.html" class="btn btn-dark">
+                Retour Accueil (FR)
+            </a>
         </div>
     </div>
 
