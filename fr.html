@@ -147,3 +147,55 @@
             </select>
             <textarea name="message" placeholder="Quelles sont vos difficultés ?"></textarea>
             <button type="submit" class="btn-main">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <section id="vacatures" class="bg-light">
+        <div class="container">
+            <h2>Devenez tuteur ! 🎓</h2>
+            <p>Vous êtes étudiant (Université/Haute École) et fort en maths ou sciences ? Rejoignez Student2Student.</p>
+            <form action="https://formspree.io/f/mvzabzqg" method="POST" style="margin-top: 20px;">
+                <input type="hidden" name="_subject" value="Nouvelle Candidature (Tuteur)">
+                <input type="text" name="naam_sollicitant" placeholder="Votre nom" required>
+                <input type="email" name="email_sollicitant" placeholder="Votre e-mail" required>
+                <input type="text" name="studierichting" placeholder="Vos études actuelles ?" required>
+                <input type="text" name="vakken_geven" placeholder="Quelles matières voulez-vous donner ?" required>
+                <textarea name="motivatie" placeholder="Courte motivation ou expérience..."></textarea>
+                <button type="submit" class="btn-small" style="background-color: #1e293b; border: none; font-size: 1rem; cursor: pointer;">Postuler maintenant</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Lieu & Contact</h3>
+                <p><strong>Student2Student</strong></p>
+                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
+                <p>1500 Halle</p>
+                <p style="margin-top: 15px;">
+                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
+                        0465 97 10 99
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-moi</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Dawoud - Student2Student. | <a href="privacy.html" style="color: inherit;">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
