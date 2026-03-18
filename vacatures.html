@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Bijlesgever | Student2Student</title>
+    <style>
+        :root {
+            --primary-color: #0A2540;
+            --accent-color: #0070F3;
+            --accent-hover: #005bb5;
+            --bg-color: #F8F9FA;
+            --text-main: #333333;
+            --text-light: #666666;
+            --white: #FFFFFF;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        .top-nav { text-align: right; padding: 15px 20px; background: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .top-nav a { text-decoration: none; font-size: 1rem; margin-left: 10px; }
+        .top-nav a.active { font-weight: bold; color: var(--accent-color); }
+        .top-nav a.inactive { color: var(--text-main); }
+        .top-nav a.home-link { float: left; font-weight: bold; color: var(--primary-color); }
+
+        .hero { background-color: var(--primary-color); color: var(--white); text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #E2E8F0; }
+        .benefits, .application { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2rem; color: var(--primary-color); margin-bottom: 40px; }
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+        .card { background: var(--white); padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .card h3 { font-size: 1.1rem; color: var(--primary-color); margin-bottom: 10px; }
+        .card p { color: var(--text-light); font-size: 0.95rem; }
+        .profile { background-color: var(--white); padding: 80px 0; }
+        .checklist { list-style: none; max-width: 800px; margin: 0 auto; }
+        .checklist li { position: relative; padding-left: 35px; margin-bottom: 20px; font-size: 1.05rem; }
+        .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--accent-color); font-size: 1.2rem; font-weight: bold; }
+        .application-text { text-align: center; margin-bottom: 40px; color: var(--text-light); }
+        .form-container { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--primary-color); }
+        input[type="text"], input[type="email"], input[type="tel"], textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; transition: border-color 0.2s; }
+        input:focus, textarea:focus { outline: none; border-color: var(--accent-color); }
+        textarea { resize: vertical; min-height: 120px; }
+        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .checkbox-item { display: flex; align-items: center; font-weight: normal; }
+        .checkbox-item input { margin-right: 10px; width: auto; }
+        .submit-btn { background-color: var(--accent-color); color: var(--white); border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
+        .submit-btn:hover { background-color: var(--accent-hover); }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .checkbox-group { grid-template-columns: 1fr; } .form-container { padding: 25px; } .top-nav a.home-link { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html" class="home-link">← Terug naar website</a>
+        <a href="vacatures.html" class="active">NL</a> | 
+        <a href="vacatures-fr.html" class="inactive">FR</a>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Word Bijlesgever bij Student2Student 🚀</h1>
+            <p>Gebruik je academische kennis, begeleid leerlingen naar betere resultaten en verdien een uitstekend, vast loon op tijden die jou uitkomen.</p>
+        </div>
+    </section>
+
+    <section class="benefits container">
+        <h2 class="section-title">Jouw voordelen op een rij:</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Duidelijke vergoeding</h3>
+                <p>Een vast loon van €18 per uur.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🗓️</div>
+                <h3>100% Flexibiliteit</h3>
+                <p>Jij bent de baas over je eigen agenda. Jij bepaalt hoeveel uren je per week werkt en wanneer je beschikbaar bent.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛑</div>
+                <h3>Geen administratie</h3>
+                <p>Jij focust puur op het voorbereiden en geven van de les. Ik zorg voor de marketing, de klantenwerving en de intakes.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📍</div>
+                <h3>Werken in jouw buurt</h3>
+                <p>Je geeft fysiek les bij de leerling thuis. Wij zijn actief in Halle, Lembeek, Sint-Pieters-Leeuw, Ruisbroek, Lot en Buizingen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="container">
+            <h2 class="section-title">Jouw profiel:</h2>
+            <ul class="checklist">
+                <li>Je bent een gemotiveerde universiteitsstudent (bijv. Geneeskunde, Wetenschappen, Ingenieur, Taalkunde, Rechten of een vergelijkbare academische richting).</li>
+                <li>Je blinkt uit in Wiskunde, Wetenschappen (Fysica/Chemie) en/of Talen (zoals Frans, Engels of Nederlands).</li>
+                <li>Je bent in staat om leerstof van het 3de leerjaar tot en met het 4de middelbaar op een heel heldere en geduldige manier uit te leggen.</li>
+                <li>Afspraak is afspraak: Je bent stipt, betrouwbaar en communiceert vlot met mij, de leerling en de ouders.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="application container">
+        <h2 class="section-title">Klaar om te starten?</h2>
+        <p class="application-text">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op voor een korte kennismaking.</p>
+        
+        <div class="form-container">
+            <form action="https://formspree.io/f/mvzabzqg" method="POST">
+                <input type="hidden" name="_subject" value="Nieuwe Sollicitatie (Bijlesgever)">
+                
+                <div class="form-group">
+                    <label for="naam">Naam en Voornaam *</label>
+                    <input type="text" id="naam" name="Naam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mailadres *</label>
+                    <input type="email" id="email" name="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefoon">Telefoonnummer *</label>
+                    <input type="tel" id="telefoon" name="Telefoon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studie">Huidige studie + in welk jaar zit je? *</label>
+                    <input type="text" id="studie" name="Studie" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Welke vakken wil je geven?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Chemie"> Chemie</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Frans"> Frans</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Engels"> Engels</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Nederlands"> Nederlands</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>In welke regio's kan je lesgeven?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Halle"> Halle</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lembeek"> Lembeek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Sint-Pieters-Leeuw"> Sint-Pieters-Leeuw</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ruisbroek"> Ruisbroek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lot"> Lot</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Buizingen"> Buizingen</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivatie">Korte motivatie / Ervaring (Optioneel)</label>
+                    <textarea id="motivatie" name="Motivatie"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Verstuur Sollicitatie</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
