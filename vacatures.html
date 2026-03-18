@@ -6,29 +6,50 @@
     <title>Word Bijlesgever | Student2Student</title>
     <style>
         :root {
-            --primary-color: #0A2540;
-            --accent-color: #0070F3;
-            --accent-hover: #005bb5;
+            /* Kleuren overgenomen van de hoofdpagina */
+            --primary-color: #1e293b; 
+            --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
             --bg-color: #F8F9FA;
             --text-main: #333333;
             --text-light: #666666;
             --white: #FFFFFF;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         
-        .top-nav { text-align: right; padding: 15px 20px; background: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .top-nav a { text-decoration: none; font-size: 1rem; margin-left: 10px; }
-        .top-nav a.active { font-weight: bold; color: var(--accent-color); }
-        .top-nav a.inactive { color: var(--text-main); }
-        .top-nav a.home-link { float: left; font-weight: bold; color: var(--primary-color); }
+        /* Vernieuwde Header / Top Navigatie */
+        .top-nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 40px; 
+            background: var(--white); 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
+        .logo span { color: var(--accent-color); }
+        
+        .nav-right { display: flex; align-items: center; }
+        .nav-right a { text-decoration: none; font-size: 1rem; transition: color 0.2s; }
+        .nav-right a.home-link { font-weight: 600; color: var(--text-light); margin-right: 20px; padding-right: 20px; border-right: 1px solid #ddd; }
+        .nav-right a.home-link:hover { color: var(--accent-color); }
+        .lang-switch a { margin: 0 8px; }
+        .lang-switch a.active { font-weight: bold; color: var(--accent-color); }
+        .lang-switch a.inactive { color: var(--text-light); }
+        .lang-switch a.inactive:hover { color: var(--primary-color); }
+        .lang-separator { color: #ddd; }
 
+        /* Rest van de styling */
         .hero { background-color: var(--primary-color); color: var(--white); text-align: center; padding: 80px 20px; }
         .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
         .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #E2E8F0; }
         .benefits, .application { padding: 80px 0; }
-        .section-title { text-align: center; font-size: 2rem; color: var(--primary-color); margin-bottom: 40px; }
+        .section-title { text-align: center; font-size: 2rem; color: var(--primary-color); margin-bottom: 40px; font-weight: 800; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
         .card { background: var(--white); padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
         .card:hover { transform: translateY(-5px); }
@@ -51,15 +72,30 @@
         .checkbox-item input { margin-right: 10px; width: auto; }
         .submit-btn { background-color: var(--accent-color); color: var(--white); border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
         .submit-btn:hover { background-color: var(--accent-hover); }
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .checkbox-group { grid-template-columns: 1fr; } .form-container { padding: 25px; } .top-nav a.home-link { display: none; } }
+        
+        /* Mobiele optimalisatie */
+        @media (max-width: 768px) { 
+            .top-nav { flex-direction: column; gap: 15px; padding: 15px; }
+            .nav-right a.home-link { border-right: none; margin-right: 0; padding-right: 0; display: block; text-align: center; margin-bottom: 10px; }
+            .lang-switch { text-align: center; }
+            .hero h1 { font-size: 2rem; } 
+            .checkbox-group { grid-template-columns: 1fr; } 
+            .form-container { padding: 25px; } 
+        }
     </style>
 </head>
 <body>
 
     <div class="top-nav">
-        <a href="index.html" class="home-link">← Terug naar website</a>
-        <a href="vacatures.html" class="active">NL</a> | 
-        <a href="vacatures-fr.html" class="inactive">FR</a>
+        <div class="logo">Student<span>2</span>Student</div>
+        <div class="nav-right">
+            <a href="index.html" class="home-link">← Terug naar website</a>
+            <div class="lang-switch">
+                <a href="vacatures.html" class="active">NL</a> 
+                <span class="lang-separator">|</span> 
+                <a href="vacatures-fr.html" class="inactive">FR</a>
+            </div>
+        </div>
     </div>
 
     <section class="hero">
