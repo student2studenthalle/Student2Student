@@ -4,81 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Bijlesgever | Student2Student</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        :root {
-            /* Kleuren overgenomen van de hoofdpagina */
-            --primary-color: #1e293b; 
-            --accent-color: #2563eb;
-            --accent-hover: #1d4ed8;
-            --bg-color: #F8F9FA;
-            --text-main: #333333;
-            --text-light: #666666;
-            --white: #FFFFFF;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        /* Specifieke styling voor de vacature elementen (aangepast om niet te botsen met style.css) */
+        .vacature-hero { background-color: #1e293b; color: #FFFFFF; text-align: center; padding: 80px 20px; margin-top: 70px; }
+        .vacature-hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .vacature-hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #E2E8F0; }
         
-        /* Vernieuwde Header / Top Navigatie */
-        .top-nav { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 15px 40px; 
-            background: var(--white); 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); }
-        .logo span { color: var(--accent-color); }
+        .vacature-section { padding: 80px 0; max-width: 1000px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
+        .vacature-title { text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px; font-weight: 800; }
         
-        .nav-right { display: flex; align-items: center; }
-        .nav-right a { text-decoration: none; font-size: 1rem; transition: color 0.2s; }
-        .nav-right a.home-link { font-weight: 600; color: var(--text-light); margin-right: 20px; padding-right: 20px; border-right: 1px solid #ddd; }
-        .nav-right a.home-link:hover { color: var(--accent-color); }
-        .lang-switch a { margin: 0 8px; }
-        .lang-switch a.active { font-weight: bold; color: var(--accent-color); }
-        .lang-switch a.inactive { color: var(--text-light); }
-        .lang-switch a.inactive:hover { color: var(--primary-color); }
-        .lang-separator { color: #ddd; }
-
-        /* Rest van de styling */
-        .hero { background-color: var(--primary-color); color: var(--white); text-align: center; padding: 80px 20px; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #E2E8F0; }
-        .benefits, .application { padding: 80px 0; }
-        .section-title { text-align: center; font-size: 2rem; color: var(--primary-color); margin-bottom: 40px; font-weight: 800; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
-        .card { background: var(--white); padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-5px); }
-        .card-icon { font-size: 2.5rem; margin-bottom: 15px; }
-        .card h3 { font-size: 1.1rem; color: var(--primary-color); margin-bottom: 10px; }
-        .card p { color: var(--text-light); font-size: 0.95rem; }
-        .profile { background-color: var(--white); padding: 80px 0; }
-        .checklist { list-style: none; max-width: 800px; margin: 0 auto; }
-        .checklist li { position: relative; padding-left: 35px; margin-bottom: 20px; font-size: 1.05rem; }
-        .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--accent-color); font-size: 1.2rem; font-weight: bold; }
-        .application-text { text-align: center; margin-bottom: 40px; color: var(--text-light); }
-        .form-container { background: var(--white); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--primary-color); }
-        input[type="text"], input[type="email"], input[type="tel"], textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; transition: border-color 0.2s; }
-        input:focus, textarea:focus { outline: none; border-color: var(--accent-color); }
-        textarea { resize: vertical; min-height: 120px; }
-        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-        .checkbox-item { display: flex; align-items: center; font-weight: normal; }
-        .checkbox-item input { margin-right: 10px; width: auto; }
-        .submit-btn { background-color: var(--accent-color); color: var(--white); border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
-        .submit-btn:hover { background-color: var(--accent-hover); }
+        .job-card { background: #FFFFFF; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
+        .job-card:hover { transform: translateY(-5px); }
+        .job-card-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .job-card h3 { font-size: 1.1rem; color: #1e293b; margin-bottom: 10px; }
+        .job-card p { color: #666666; font-size: 0.95rem; }
         
-        /* Mobiele optimalisatie */
+        .profile-bg { background-color: #FFFFFF; }
+        .checklist { list-style: none; max-width: 800px; margin: 0 auto; }
+        .checklist li { position: relative; padding-left: 35px; margin-bottom: 20px; font-size: 1.05rem; color: #333333; }
+        .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #2563eb; font-size: 1.2rem; font-weight: bold; }
+        
+        .application-text { text-align: center; margin-bottom: 40px; color: #666666; }
+        .form-container { background: #FFFFFF; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+        .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"], .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; transition: border-color 0.2s; font-family: 'Inter', sans-serif;}
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2563eb; }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        
+        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333;}
+        .checkbox-item input { margin-right: 10px; width: auto; }
+        
+        .submit-btn-job { background-color: #2563eb; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
+        .submit-btn-job:hover { background-color: #1d4ed8; }
+        
         @media (max-width: 768px) { 
-            .top-nav { flex-direction: column; gap: 15px; padding: 15px; }
-            .nav-right a.home-link { border-right: none; margin-right: 0; padding-right: 0; display: block; text-align: center; margin-bottom: 10px; }
-            .lang-switch { text-align: center; }
-            .hero h1 { font-size: 2rem; } 
+            .vacature-hero h1 { font-size: 2rem; } 
             .checkbox-group { grid-template-columns: 1fr; } 
             .form-container { padding: 25px; } 
         }
@@ -86,54 +55,66 @@
 </head>
 <body>
 
-    <div class="top-nav">
+    <header>
         <div class="logo">Student<span>2</span>Student</div>
-        <div class="nav-right">
-            <a href="index.html" class="home-link">← Terug naar website</a>
+        <div class="header-right">
             <div class="lang-switch">
-                <a href="vacatures.html" class="active">NL</a> 
-                <span class="lang-separator">|</span> 
-                <a href="vacatures-fr.html" class="inactive">FR</a>
+                <a href="vacatures.html" class="active">NL</a>
+                <span>|</span>
+                <a href="vacatures-fr.html">FR</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#over">Over mij</a></li>
+                    <li><a href="index.html#werkwijze">Werkwijze</a></li>
+                    <li><a href="index.html#tarieven">Tarieven</a></li>
+                    <li><a href="vacatures.html">Vacatures</a></li>
+                    <li><a href="index.html#contact" class="btn-small">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-socials">
+                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
-    </div>
+    </header>
 
-    <section class="hero">
-        <div class="container">
+    <section class="vacature-hero">
+        <div class="vacature-section" style="padding: 0;">
             <h1>Word Bijlesgever bij Student2Student 🚀</h1>
             <p>Gebruik je academische kennis, begeleid leerlingen naar betere resultaten en verdien een uitstekend, vast loon op tijden die jou uitkomen.</p>
         </div>
     </section>
 
-    <section class="benefits container">
-        <h2 class="section-title">Jouw voordelen op een rij:</h2>
+    <section class="vacature-section" style="background-color: #F8F9FA;">
+        <h2 class="vacature-title">Jouw voordelen op een rij:</h2>
         <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon">💰</div>
+            <div class="job-card">
+                <div class="job-card-icon">💰</div>
                 <h3>Duidelijke vergoeding</h3>
                 <p>Een vast loon van €18 per uur.</p>
             </div>
-            <div class="card">
-                <div class="card-icon">🗓️</div>
+            <div class="job-card">
+                <div class="job-card-icon">🗓️</div>
                 <h3>100% Flexibiliteit</h3>
                 <p>Jij bent de baas over je eigen agenda. Jij bepaalt hoeveel uren je per week werkt en wanneer je beschikbaar bent.</p>
             </div>
-            <div class="card">
-                <div class="card-icon">🛑</div>
+            <div class="job-card">
+                <div class="job-card-icon">🛑</div>
                 <h3>Geen administratie</h3>
                 <p>Jij focust puur op het voorbereiden en geven van de les. Ik zorg voor de marketing, de klantenwerving en de intakes.</p>
             </div>
-            <div class="card">
-                <div class="card-icon">📍</div>
+            <div class="job-card">
+                <div class="job-card-icon">📍</div>
                 <h3>Werken in jouw buurt</h3>
                 <p>Je geeft fysiek les bij de leerling thuis. Wij zijn actief in Halle, Lembeek, Sint-Pieters-Leeuw, Ruisbroek, Lot en Buizingen.</p>
             </div>
         </div>
     </section>
 
-    <section class="profile">
-        <div class="container">
-            <h2 class="section-title">Jouw profiel:</h2>
+    <section class="profile-bg">
+        <div class="vacature-section">
+            <h2 class="vacature-title">Jouw profiel:</h2>
             <ul class="checklist">
                 <li>Je bent een gemotiveerde universiteitsstudent (bijv. Geneeskunde, Wetenschappen, Ingenieur, Taalkunde, Rechten of een vergelijkbare academische richting).</li>
                 <li>Je blinkt uit in Wiskunde, Wetenschappen (Fysica/Chemie) en/of Talen (zoals Frans, Engels of Nederlands).</li>
@@ -143,8 +124,8 @@
         </div>
     </section>
 
-    <section class="application container">
-        <h2 class="section-title">Klaar om te starten?</h2>
+    <section class="vacature-section" style="background-color: #F8F9FA;">
+        <h2 class="vacature-title">Klaar om te starten?</h2>
         <p class="application-text">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op voor een korte kennismaking.</p>
         
         <div class="form-container">
@@ -200,10 +181,41 @@
                     <textarea id="motivatie" name="Motivatie"></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Verstuur Sollicitatie</button>
+                <button type="submit" class="submit-btn-job">Verstuur Sollicitatie</button>
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Locatie & Contact</h3>
+                <p><strong>Student2Student</strong></p>
+                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
+                <p>1500 Halle</p>
+                <p style="margin-top: 15px;">
+                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
+                        0465 97 10 99
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Volg mij</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Dawoud - Student2Student. | <a href="privacy.html" style="color: inherit;">Privacybeleid</a></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
