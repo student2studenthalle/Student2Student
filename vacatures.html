@@ -49,7 +49,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html#over">Over mij</a></li>
+                    <li><a href="index.html#over">Over ons</a></li>
                     <li><a href="index.html#werkwijze">Werkwijze</a></li>
                     <li><a href="index.html#tarieven">Tarieven</a></li>
                     <li><a href="vacatures.html">Vacatures</a></li>
@@ -86,12 +86,12 @@
             <div class="job-card">
                 <div class="job-card-icon">🛑</div>
                 <h3>Geen administratie</h3>
-                <p>Jij focust puur op het voorbereiden en geven van de les. Ik zorg voor de marketing, de klantenwerving en de intakes.</p>
+                <p>Jij focust puur op het voorbereiden en geven van de les. Wij zorgen voor de marketing, de klantenwerving en de intakes.</p>
             </div>
             <div class="job-card">
                 <div class="job-card-icon">📍</div>
                 <h3>Werken in jouw buurt</h3>
-                <p>Je geeft fysiek les bij de leerling thuis. Wij zijn actief in regio Halle en omliggende gemeenten.</p>
+                <p>Je geeft fysiek les bij de leerling thuis. Wij zijn actief in regio Halle, Jette en omliggende gemeenten.</p>
             </div>
         </div>
     </section>
@@ -110,7 +110,7 @@
 
     <section class="vacature-section" style="background-color: #F8F9FA;">
         <h2 class="vacature-title">Klaar om te starten?</h2>
-        <p class="application-text">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op.</p>
+        <p class="application-text">Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op.</p>
         
         <div class="form-container">
             <form action="https://formspree.io/f/mvzabzqg" method="POST">
@@ -136,6 +136,14 @@
                     <label for="studie">Huidige studie + in welk jaar zit je? *</label>
                     <input type="text" id="studie" name="Studie" required>
                 </div>
+                
+                <div class="form-group">
+                    <label>Taalkennis *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="radio" name="Tweetalig" value="Ja, vloeiend NL en FR" required> Ik spreek vloeiend Nederlands én Frans</label>
+                        <label class="checkbox-item"><input type="radio" name="Tweetalig" value="Enkel NL"> Ik spreek enkel Nederlands vlot genoeg voor bijles</label>
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label>Welke vakken wil je geven?</label>
@@ -159,14 +167,19 @@
                 <div class="form-group">
                     <label>Welke dagen ben je beschikbaar?</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Maandag"> Maandag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Dinsdag"> Dinsdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Woensdag"> Woensdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Donderdag"> Donderdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Vrijdag"> Vrijdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Zaterdag"> Zaterdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid" value="Zondag"> Zondag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Maandag"> Maandag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Dinsdag"> Dinsdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Woensdag"> Woensdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Donderdag"> Donderdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Vrijdag"> Vrijdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zaterdag"> Zaterdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zondag"> Zondag</label>
                     </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="uren">Tussen welke uren ben je op die dagen meestal beschikbaar? *</label>
+                    <input type="text" id="uren" name="Beschikbaarheid_Uren" placeholder="Bv. Doordeweeks na 16u, in het weekend hele dag" required>
                 </div>
 
                 <div class="form-group">
@@ -184,8 +197,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="motivatie">Korte motivatie / Ervaring (Optioneel)</label>
-                    <textarea id="motivatie" name="Motivatie"></textarea>
+                    <label for="motivatie">Waarom wil je graag bijles geven via ons? (Motivatie & Ervaring) *</label>
+                    <textarea id="motivatie" name="Motivatie" required placeholder="Vertel ons kort waarom jij een goede match bent voor het team."></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn-job">Verstuur Sollicitatie</button>
@@ -198,8 +211,7 @@
             <div class="footer-section">
                 <h3>Locatie & Contact</h3>
                 <p><strong>Student2Student</strong></p>
-                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
-                <p>1500 Halle</p>
+                <p>Regio Halle & Jette</p>
                 <p style="margin-top: 15px;">
                     <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
                         <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
@@ -208,7 +220,7 @@
                 </p>
             </div>
             <div class="footer-section">
-                <h3>Volg mij</h3>
+                <h3>Volg ons</h3>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
@@ -216,12 +228,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>© 2026 Dawoud - Student2Student. | <a href="privacy.html" style="color: inherit;">Privacybeleid</a></p>
+            <p>© 2026 Student2Student. | <a href="privacy.html" style="color: inherit;">Privacybeleid</a></p>
         </div>
     </footer>
-
-    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 </body>
 </html>
