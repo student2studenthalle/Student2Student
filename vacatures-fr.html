@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devenez Tuteur | Student2Student</title>
-    
     <link rel="canonical" href="https://student2student.be/vacatures-fr.html">
-    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <style>
         .vacature-section { padding: 80px 0; max-width: 1000px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
         .vacature-title { text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px; font-weight: 800; }
-        
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
         .job-card { background: #FFFFFF; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
         .job-card:hover { transform: translateY(-5px); }
         .job-card-icon { font-size: 2.5rem; margin-bottom: 15px; }
         .job-card h3 { font-size: 1.1rem; color: #1e293b; margin-bottom: 10px; }
         .job-card p { color: #666666; font-size: 0.95rem; }
-        
         .profile-bg { background-color: #FFFFFF; }
         .checklist { list-style: none; max-width: 800px; margin: 0 auto; }
         .checklist li { position: relative; padding-left: 35px; margin-bottom: 20px; font-size: 1.05rem; color: #333333; }
         .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #2563eb; font-size: 1.2rem; font-weight: bold; }
-        
         .application-text { text-align: center; margin-bottom: 40px; color: #666666; }
         .form-container { background: #FFFFFF; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; }
         .form-group { margin-bottom: 20px; }
@@ -35,18 +29,12 @@
         .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"], .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; transition: border-color 0.2s; font-family: 'Inter', sans-serif;}
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2563eb; }
         .form-group textarea { resize: vertical; min-height: 120px; }
-        
         .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
         .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333;}
         .checkbox-item input { margin-right: 10px; width: auto; }
-        
         .submit-btn-job { background-color: #2563eb; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
         .submit-btn-job:hover { background-color: #1d4ed8; }
-        
-        @media (max-width: 768px) { 
-            .checkbox-group { grid-template-columns: 1fr; } 
-            .form-container { padding: 25px; } 
-        }
+        @media (max-width: 768px) { .checkbox-group { grid-template-columns: 1fr; } .form-container { padding: 25px; } }
     </style>
 </head>
 <body>
@@ -103,7 +91,7 @@
             <div class="job-card">
                 <div class="job-card-icon">📍</div>
                 <h3>Travailler près de chez vous</h3>
-                <p>Vous donnez cours physiquement au domicile de l'élève. Nous sommes actifs à Hal, Lembeek, Leeuw-Saint-Pierre, Ruisbroek, Lot et Buizingen.</p>
+                <p>Vous donnez cours physiquement au domicile de l'élève. Nous sommes actifs dans la région de Hal et ses alentours.</p>
             </div>
         </div>
     </section>
@@ -112,17 +100,17 @@
         <div class="vacature-section">
             <h2 class="vacature-title">Votre profil :</h2>
             <ul class="checklist">
-                <li>Vous êtes un étudiant universitaire motivé (par ex. Médecine, Sciences, Ingénierie, Linguistique, Droit ou une filière académique similaire).</li>
-                <li>Vous excellez en Mathématiques, Sciences (Physique/Chimie) et/ou Langues (comme le français, l'anglais ou le néerlandais).</li>
-                <li>Vous êtes capable d'expliquer la matière de la 3ème primaire à la 4ème secondaire de manière très claire et patiente.</li>
-                <li>Un accord est un accord : Vous êtes ponctuel, fiable et communiquez facilement avec moi, l'élève et les parents.</li>
+                <li>Vous êtes un étudiant universitaire motivé.</li>
+                <li>Vous excellez dans les matières que vous souhaitez enseigner.</li>
+                <li>Vous êtes capable d'expliquer la matière de manière claire et patiente.</li>
+                <li>Un accord est un accord : Vous êtes ponctuel, fiable et communiquez facilement.</li>
             </ul>
         </div>
     </section>
 
     <section class="vacature-section" style="background-color: #F8F9FA;">
         <h2 class="vacature-title">Prêt à commencer ?</h2>
-        <p class="application-text">Remplissez le formulaire ci-dessous et je vous contacterai dès que possible pour une brève rencontre.</p>
+        <p class="application-text">Remplissez le formulaire ci-dessous et je vous contacterai dès que possible.</p>
         
         <div class="form-container">
             <form action="https://formspree.io/f/mvzabzqg" method="POST">
@@ -158,6 +146,26 @@
                         <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Frans"> Français</label>
                         <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Engels"> Anglais</label>
                         <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Nederlands"> Néerlandais</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Géographie"> Géographie</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Histoire"> Histoire</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="niveau">Pour quel niveau/âge souhaitez-vous enseigner ? *</label>
+                    <input type="text" id="niveau" name="Niveau" placeholder="Ex. Primaire, 1ère-4ème secondaire" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Quels jours êtes-vous disponible ?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Lundi"> Lundi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Mardi"> Mardi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Mercredi"> Mercredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Jeudi"> Jeudi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Vendredi"> Vendredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Samedi"> Samedi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Dimanche"> Dimanche</label>
                     </div>
                 </div>
 
@@ -170,6 +178,8 @@
                         <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ruisbroek"> Ruisbroek</label>
                         <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lot"> Lot</label>
                         <label class="checkbox-item"><input type="checkbox" name="Regio" value="Buizingen"> Buizingen</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Jette"> Jette</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ganshoren"> Ganshoren</label>
                     </div>
                 </div>
 
