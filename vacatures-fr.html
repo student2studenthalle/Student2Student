@@ -86,12 +86,12 @@
             <div class="job-card">
                 <div class="job-card-icon">🛑</div>
                 <h3>Zéro administration</h3>
-                <p>Vous vous concentrez uniquement sur la préparation et la dispense des cours. Je m'occupe du marketing, du recrutement et des entretiens.</p>
+                <p>Vous vous concentrez uniquement sur la préparation et la dispense des cours. Nous nous occupons du marketing et des clients.</p>
             </div>
             <div class="job-card">
                 <div class="job-card-icon">📍</div>
                 <h3>Travailler près de chez vous</h3>
-                <p>Vous donnez cours physiquement au domicile de l'élève. Nous sommes actifs dans la région de Hal et ses alentours.</p>
+                <p>Vous donnez cours physiquement au domicile de l'élève. Nous sommes actifs dans la région de Hal et Jette.</p>
             </div>
         </div>
     </section>
@@ -110,7 +110,7 @@
 
     <section class="vacature-section" style="background-color: #F8F9FA;">
         <h2 class="vacature-title">Prêt à commencer ?</h2>
-        <p class="application-text">Remplissez le formulaire ci-dessous et je vous contacterai dès que possible.</p>
+        <p class="application-text">Remplissez le formulaire ci-dessous et nous vous contacterons dès que possible.</p>
         
         <div class="form-container">
             <form action="https://formspree.io/f/mvzabzqg" method="POST">
@@ -136,6 +136,14 @@
                     <label for="studie">Études actuelles + en quelle année êtes-vous ? *</label>
                     <input type="text" id="studie" name="Etudes" required>
                 </div>
+                
+                <div class="form-group">
+                    <label>Connaissances linguistiques *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item"><input type="radio" name="Bilingue" value="Oui, NL et FR" required> Je parle couramment le français ET le néerlandais</label>
+                        <label class="checkbox-item"><input type="radio" name="Bilingue" value="Uniquement FR"> Je parle uniquement le français couramment</label>
+                    </div>
+                </div>
 
                 <div class="form-group">
                     <label>Quelles matières souhaitez-vous enseigner ?</label>
@@ -159,14 +167,19 @@
                 <div class="form-group">
                     <label>Quels jours êtes-vous disponible ?</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Lundi"> Lundi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Mardi"> Mardi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Mercredi"> Mercredi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Jeudi"> Jeudi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Vendredi"> Vendredi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Samedi"> Samedi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite" value="Dimanche"> Dimanche</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Lundi"> Lundi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Mardi"> Mardi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Mercredi"> Mercredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Jeudi"> Jeudi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Vendredi"> Vendredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Samedi"> Samedi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Dimanche"> Dimanche</label>
                     </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="uren">Entre quelles heures êtes-vous généralement disponible ces jours-là ? *</label>
+                    <input type="text" id="uren" name="Disponibilite_Heures" placeholder="Ex. En semaine après 16h, week-end toute la journée" required>
                 </div>
 
                 <div class="form-group">
@@ -184,8 +197,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="motivatie">Brève motivation / Expérience (Optionnel)</label>
-                    <textarea id="motivatie" name="Motivation"></textarea>
+                    <label for="motivatie">Pourquoi souhaitez-vous donner des cours avec nous ? (Motivation & Expérience) *</label>
+                    <textarea id="motivatie" name="Motivation" required placeholder="Dites-nous brièvement pourquoi vous êtes le candidat idéal."></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn-job">Envoyer la candidature</button>
@@ -198,8 +211,7 @@
             <div class="footer-section">
                 <h3>Lieu & Contact</h3>
                 <p><strong>Student2Student</strong></p>
-                <p><a href="https://www.google.com/maps/place/Student2student/@50.721394,4.2038978,96m/data=!3m1!1e3!4m6!3m5!1s0x47c3c9c3bff172b7:0xa3e403baeafc8614!8m2!3d50.7216977!4d4.2040408!16s%2Fg%2F11w8py5zyr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: none;">Kriekenveldstraat 8</a></p>
-                <p>1500 Halle</p>
+                <p>Région Hal & Jette</p>
                 <p style="margin-top: 15px;">
                     <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
                         <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
@@ -208,7 +220,7 @@
                 </p>
             </div>
             <div class="footer-section">
-                <h3>Suivez-moi</h3>
+                <h3>Suivez-nous</h3>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
@@ -216,12 +228,8 @@
             </div>
         </div>
         <div class="copyright">
-            <p>© 2026 Dawoud - Student2Student. | <a href="privacy.html" style="color: inherit;">Politique de confidentialité</a></p>
+            <p>© 2026 Student2Student. | <a href="privacy.html" style="color: inherit;">Politique de confidentialité</a></p>
         </div>
     </footer>
-
-    <a href="https://wa.me/32465971099" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 </body>
 </html>
