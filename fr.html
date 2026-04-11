@@ -35,6 +35,40 @@
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
         .btn-secondary { background: transparent; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; }
         .btn-secondary:hover { background: #FFFFFF; color: #1e293b; }
+
+        /* Styling voor formulieren en checkboxes op de homepage */
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; margin-bottom: 15px;}
+        .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333; font-size: 0.95rem; margin: 0; }
+        .checkbox-item input { margin-right: 8px; width: auto !important; margin-bottom: 0 !important; }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 15px;
+                box-sizing: border-box;
+                width: 100%;
+                overflow-x: hidden;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem !important;
+                line-height: 1.2;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+            }
+            .btn-main, .btn-secondary {
+                width: 100%;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .checkbox-group { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -168,29 +202,29 @@
 
     <section id="contact" class="container">
         <h2>Trouvez un Tuteur (Demande)</h2>
-        <form action="https://formspree.io/f/mvzabzqg" method="POST">
+        <form action="https://formspree.io/f/mqeywpaz" method="POST">
             <input type="hidden" name="_next" value="https://student2student.be/bedankt.html">
             <input type="hidden" name="_subject" value="Nouvelle Demande de Cours (Client)">
             
             <input type="text" name="Nom_Parent" placeholder="Nom du parent" required>
-            
             <input type="text" name="Nom_Eleve" placeholder="Nom de l'élève *" required>
             <input type="text" name="Niveau_Annee" placeholder="Année d'étude / Niveau (Ex. 4ème secondaire) *" required>
-            
             <input type="email" name="Email" placeholder="Adresse e-mail *" required>
             <input type="tel" name="Telefoon" placeholder="Numéro de téléphone (optionnel)">
             
-            <select name="Matiere" required>
-                <option value="" disabled selected>Pour quelle matière avez-vous besoin d'aide ? *</option>
-                <option value="Mathématiques">Mathématiques</option>
-                <option value="Physique">Physique</option>
-                <option value="Chimie">Chimie</option>
-                <option value="Biologie">Biologie</option>
-                <option value="Langues (FR/NL/EN)">Langues (FR/NL/EN)</option>
-                <option value="Géographie">Géographie</option>
-                <option value="Histoire">Histoire</option>
-                <option value="Autre">Plusieurs matières / Autre</option>
-            </select>
+            <div class="form-group">
+                <label>Pour quelles matières avez-vous besoin d'aide ? * (Plusieurs choix possibles)</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Mathématiques"> Mathématiques</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Physique"> Physique</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Chimie"> Chimie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Biologie"> Biologie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Langues (FR/NL/EN)"> Langues (FR/NL/EN)</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Géographie"> Géographie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Histoire"> Histoire</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Autre"> Autre</label>
+                </div>
+            </div>
             
             <textarea name="Message" placeholder="Quelles sont les difficultés exactes de l'élève ? (Besoins spécifiques) *" required></textarea>
             <button type="submit" class="btn-main">Envoyer la demande</button>
