@@ -36,6 +36,13 @@
         .btn-secondary { background: transparent; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; }
         .btn-secondary:hover { background: #FFFFFF; color: #1e293b; }
 
+        /* Styling voor formulieren en checkboxes op de homepage */
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; margin-bottom: 15px;}
+        .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333; font-size: 0.95rem; margin: 0; }
+        .checkbox-item input { margin-right: 8px; width: auto !important; margin-bottom: 0 !important; }
+
         @media (max-width: 768px) {
             .hero-content {
                 padding: 0 15px;
@@ -60,6 +67,7 @@
                 text-align: center;
                 box-sizing: border-box;
             }
+            .checkbox-group { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -194,29 +202,29 @@
 
     <section id="contact" class="container">
         <h2>Vind een Bijlesgever (Aanvraag)</h2>
-        <form action="https://formspree.io/f/mvzabzqg" method="POST">
+        <form action="https://formspree.io/f/mqeywpaz" method="POST">
             <input type="hidden" name="_next" value="https://student2student.be/bedankt.html">
             <input type="hidden" name="_subject" value="Nieuwe Bijles Aanvraag (Klant)">
             
             <input type="text" name="Naam_Ouder" placeholder="Naam ouder" required>
-            
             <input type="text" name="Naam_Leerling" placeholder="Naam van de leerling *" required>
             <input type="text" name="Niveau_Studiejaar" placeholder="Studiejaar / Niveau (Bv. 4de middelbaar) *" required>
-            
             <input type="email" name="Email" placeholder="E-mailadres *" required>
             <input type="tel" name="Telefoon" placeholder="Telefoonnummer (optioneel)">
             
-            <select name="Vak" required>
-                <option value="" disabled selected>Voor welk vak is er hulp nodig? *</option>
-                <option value="Wiskunde">Wiskunde</option>
-                <option value="Fysica">Fysica</option>
-                <option value="Chemie">Chemie</option>
-                <option value="Biologie">Biologie</option>
-                <option value="Talen (NL/FR/EN)">Talen (NL/FR/EN)</option>
-                <option value="Aardrijkskunde">Aardrijkskunde</option>
-                <option value="Geschiedenis">Geschiedenis</option>
-                <option value="Anders">Meerdere vakken / Anders</option>
-            </select>
+            <div class="form-group">
+                <label>Voor welke vakken is er hulp nodig? * (Meerdere keuzes mogelijk)</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Chemie"> Chemie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Biologie"> Biologie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Talen (NL/FR/EN)"> Talen (NL/FR/EN)</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Aardrijkskunde"> Aardrijkskunde</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Geschiedenis"> Geschiedenis</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Anders"> Anders</label>
+                </div>
+            </div>
             
             <textarea name="Message" placeholder="Waar loopt de leerling exact tegenaan? (Specifieke noden) *" required></textarea>
             <button type="submit" class="btn-main">Verstuur aanvraag</button>
