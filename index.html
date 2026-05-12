@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijles in Halle & Jette | Wiskunde, Wetenschappen & Talen</title>
+    <meta name="description" content="Kwalitatieve bijles in regio Halle en Jette door academische studenten. Persoonlijke begeleiding aan huis voor een vast tarief via Student2Student.">
+    <meta name="keywords" content="Bijles Halle, Bijles Jette, Bijles Wiskunde, Bijles Talen, Student2Student, Team academische studenten">
+    <meta name="author" content="Student2Student Team">
+    <link rel="canonical" href="https://student2student.be/">
+    
+    <meta property="og:title" content="Bijles in Halle & Jette | Wiskunde, Wetenschappen & Talen">
+    <meta property="og:description" content="Kwalitatieve bijles in regio Halle en Jette door academische studenten. Persoonlijke begeleiding aan huis voor een vast tarief.">
+    <meta property="og:image" content="https://student2student.be/favicon.png">
+    <meta property="og:url" content="https://student2student.be/">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Student2Student",
+      "url": "https://student2student.be",
+      "telephone": "+32465971099",
+      "areaServed": ["Halle", "Jette", "Sint-Pieters-Leeuw", "Lembeek", "Ruisbroek", "Lot", "Buizingen", "Ganshoren"],
+      "description": "Kwalitatieve bijles in regio Halle en Jette door academische studenten."
+    }
+    </script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE6LKS09ZY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -8,24 +39,7 @@
       gtag('js', new Date());
       gtag('config', 'G-TE6LKS09ZY');
     </script>
-    <link rel="canonical" href="https://student2student.be/">
-    <meta property="og:title" content="Kwalitatieve Bijles in Halle & Jette | Student2Student">
-    <meta property="og:description" content="Kwalitatieve bijles in regio Halle en Jette door academische studenten. Persoonlijke begeleiding aan huis voor een vast tarief.">
-    <meta property="og:image" content="https://student2student.be/favicon.png">
-    <meta property="og:url" content="https://student2student.be/">
-    <meta property="og:type" content="website">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijles Wiskunde, Wetenschappen & Talen | Student2Student</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <meta name="description" content="Kwalitatieve bijles in regio Halle en Jette door academische studenten. Persoonlijke begeleiding aan huis voor een vast tarief via Student2Student.">
-    <meta name="keywords" content="Bijles Halle, Bijles Jette, Bijles Wiskunde, Bijles Talen, Student2Student, Team academische studenten">
-    <meta name="author" content="Student2Student Team">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; margin-top: 40px; }
         .step-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -35,38 +49,33 @@
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
         .btn-secondary { background: transparent; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; }
         .btn-secondary:hover { background: #FFFFFF; color: #1e293b; }
+        
+        .hero-subtext { font-size: 0.9rem; margin-top: 5px; opacity: 0.9; }
+        .badge-new { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2563eb; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; white-space: nowrap; }
+        .price-list { text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5; }
+        .price-alert { color: #e63946; font-weight: bold; margin-top: 5px; }
+        .price-note { font-size: 1rem; color: #666; font-weight: normal; }
 
-        /* Styling voor formulieren en checkboxes op de homepage */
         .form-group { margin-bottom: 20px; text-align: left; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; font-size: 0.95rem; }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; }
         .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; margin-bottom: 15px;}
         .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333; font-size: 0.95rem; margin: 0; }
         .checkbox-item input { margin-right: 8px; width: auto !important; margin-bottom: 0 !important; }
 
+        .faq-container { max-width: 800px; margin: 0 auto; text-align: left; }
+        .faq-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: #1e293b; margin-bottom: 10px; font-size: 1.1rem; }
+        .faq-item p { color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0; }
+        
+        .whatsapp-btn { background-color: #25D366; color: white; display: inline-block; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 15px; transition: 0.3s; border: none; font-size: 1.1rem;}
+        .whatsapp-btn:hover { background-color: #1ebe5d; }
+
         @media (max-width: 768px) {
-            .hero-content {
-                padding: 0 15px;
-                box-sizing: border-box;
-                width: 100%;
-                overflow-x: hidden;
-            }
-            .hero-content h1 {
-                font-size: 2.2rem !important;
-                line-height: 1.2;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                hyphens: auto;
-            }
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-            }
-            .btn-main, .btn-secondary {
-                width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-            }
+            .hero-content { padding: 0 15px; box-sizing: border-box; width: 100%; overflow-x: hidden; }
+            .hero-content h1 { font-size: 2.2rem !important; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; }
+            .hero-buttons { flex-direction: column; width: 100%; padding: 0; }
+            .btn-main, .btn-secondary, .whatsapp-btn { width: 100%; text-align: center; box-sizing: border-box; }
             .checkbox-group { grid-template-columns: 1fr; }
         }
     </style>
@@ -90,8 +99,8 @@
                 </ul>
             </nav>
             <div class="header-socials">
-                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </header>
@@ -100,7 +109,7 @@
         <div class="hero-content">
             <h1>Kwalitatieve Bijles door<br>Universiteits&shy;studenten.</h1>
             <p>Ons team van gemotiveerde studenten geeft<br>persoonlijke bijles in<br><strong>Wiskunde, Wetenschappen, Talen & Geschiedenis</strong>.</p>
-            <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.9;">Voor de lagere school t/m het middelbaar<br>in regio Halle & Jette</p>
+            <p class="hero-subtext">Voor de lagere school t/m het middelbaar<br>in regio Halle & Jette</p>
             
             <div class="hero-buttons">
                 <a href="#contact" class="btn-main">Vind een Bijlesgever</a>
@@ -117,8 +126,8 @@
                 <p>Ons team helpt leerlingen met de vakken waar ze op vastlopen. Dat gaat van exacte vakken zoals <strong>Wiskunde, Fysica en Chemie</strong>, tot <strong>Talen, Aardrijkskunde en Geschiedenis</strong>. Wij bieden empathische ondersteuning met een sterke focus op zelfvertrouwen en de juiste studievaardigheden.</p>
             </div>
             <div class="stats">
-                <div class="stat-card"><strong>Academische</strong> tutoren</div>
-                <div class="stat-card"><strong>Regio</strong> Halle & Jette</div>
+                <div class="stat-card"><strong>20+ leerlingen</strong> geholpen</div>
+                <div class="stat-card"><strong>Snel antwoord</strong> binnen 48u</div>
             </div>
         </div>
     </section>
@@ -152,7 +161,7 @@
             <div class="card">
                 <h3>Individuele Bijles 🎯</h3>
                 <p>De ultieme 1-op-1 begeleiding voor maximale progressie. Wij komen naar jullie toe voor bijles in de vertrouwde thuisomgeving.</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
+                <ul class="price-list">
                     <li><strong>100% Persoonlijk:</strong> Volledige focus op de eigen struikelblokken.</li>
                     <li><strong>Eigen tempo:</strong> Ruimte voor extra uitleg zonder druk.</li>
                     <li><strong>Flexibel:</strong> Planning afgestemd op jullie agenda.</li>
@@ -162,16 +171,16 @@
             </div>
             
             <div class="card" style="border: 2px solid #2563eb; position: relative;">
-                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2563eb; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; white-space: nowrap;">Nieuw Concept</div>
+                <div class="badge-new">Nieuw Concept</div>
                 <h3>Duo Boost Pakket 🚀</h3>
                 <p>Samen met een vriend(in) of klasgenoot de leerstof van het vorige trimester beheersen! Interactiever, minder saai en een gezonde competitie.</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
-                    <li><strong>Locatie:</strong> Bij de tutor in Halle</li>
+                <ul class="price-list">
+                    <li><strong>Locatie:</strong> Bij de tutor in Halle of Jette</li>
                     <li><strong>Formaat:</strong> Blokken van 2 uur</li>
                     <li><strong>Vakken:</strong> Wiskunde, Wetenschappen & Talen</li>
-                    <li style="color: #e63946; font-weight: bold; margin-top: 5px;">Let op: Plek voor slechts 1 duo (First come, first served!)</li>
+                    <li class="price-alert">Let op: Plek voor slechts 1 duo (First come, first served!)</li>
                 </ul>
-                <p class="price">€20 / uur <span style="font-size: 1rem; color: #666; font-weight: normal;">per kind</span></p>
+                <p class="price">€20 / uur <span class="price-note">per kind</span></p>
             </div>
         </div>
     </section>
@@ -196,24 +205,61 @@
             </div>
         </div>
         <div style="text-align: center; margin-top: 35px;">
-            <a href="https://www.google.com/search?q=Student2Student+Halle" target="_blank" class="btn-main">Bekijk op Google Maps</a>
+            <a href="https://www.google.com/search?q=Student2Student+Halle" target="_blank" rel="noopener noreferrer" class="btn-main">Bekijk op Google Maps</a>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Vind een Bijlesgever (Aanvraag)</h2>
-        <form action="https://formspree.io/f/mqeywpaz" method="POST">
+    <section id="faq" class="bg-light">
+        <div class="container faq-container">
+            <h2 style="text-align: center;">Veelgestelde Vragen</h2>
+            <div class="faq-item">
+                <h4>Komen jullie aan huis?</h4>
+                <p>Ja, voor onze individuele bijlessen komen onze tutoren bij u thuis in de regio's rond Halle en Jette.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Hoe snel kan de bijles starten?</h4>
+                <p>Nadat u het formulier heeft ingevuld, nemen wij binnen de 48 uur contact met u op om de eerste les in te plannen.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Werken jullie enkel met universiteitsstudenten?</h4>
+                <p>Ja, we selecteren gemotiveerde academische studenten (uit richtingen zoals geneeskunde, wetenschappen of talen) die zelf sterk scoren op de vakken die ze doceren.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container" style="max-width: 700px;">
+        <h2 style="text-align: center;">Vind een Bijlesgever (Aanvraag)</h2>
+        <form action="https://formspree.io/f/mqeywpaz" method="POST" id="klantForm">
             <input type="hidden" name="_next" value="https://student2student.be/bedankt.html">
             <input type="hidden" name="_subject" value="Nieuwe Bijles Aanvraag (Klant)">
             
-            <input type="text" name="Naam_Ouder" placeholder="Naam ouder" required>
-            <input type="text" name="Naam_Leerling" placeholder="Naam van de leerling *" required>
-            <input type="text" name="Niveau_Studiejaar" placeholder="Studiejaar / Niveau (Bv. 4de middelbaar) *" required>
-            <input type="email" name="Email" placeholder="E-mailadres *" required>
-            <input type="tel" name="Telefoon" placeholder="Telefoonnummer (optioneel)">
+            <div class="form-group">
+                <label for="naam_ouder">Naam Ouder *</label>
+                <input type="text" id="naam_ouder" name="Naam_Ouder" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="naam_leerling">Naam van de Leerling *</label>
+                <input type="text" id="naam_leerling" name="Naam_Leerling" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="niveau">Studiejaar / Niveau (Bv. 4de middelbaar) *</label>
+                <input type="text" id="niveau" name="Niveau_Studiejaar" class="form-control" required>
+            </div>
             
             <div class="form-group">
-                <label>Voor welke vakken is er hulp nodig? * (Meerdere keuzes mogelijk)</label>
+                <label for="email">E-mailadres *</label>
+                <input type="email" id="email" name="Email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="tel" id="telefoon" name="Telefoon" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Voor welke vakken is er hulp nodig? *</label>
                 <div class="checkbox-group">
                     <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
                     <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
@@ -221,40 +267,4 @@
                     <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Biologie"> Biologie</label>
                     <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Talen (NL/FR/EN)"> Talen (NL/FR/EN)</label>
                     <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Aardrijkskunde"> Aardrijkskunde</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Geschiedenis"> Geschiedenis</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Anders"> Anders</label>
-                </div>
-            </div>
-            
-            <textarea name="Message" placeholder="Waar loopt de leerling exact tegenaan? (Specifieke noden) *" required></textarea>
-            <button type="submit" class="btn-main">Verstuur aanvraag</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Locatie & Contact</h3>
-                <p><strong>Student2Student</strong></p>
-                <p>Regio Halle & Jette</p>
-                <p style="margin-top: 15px;">
-                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
-                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
-                        0465 97 10 99
-                    </a>
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>Volg ons</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2026 Student2Student. | <a href="privacy.html" style="color: inherit;">Privacybeleid</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+                    <label class="checkbox-item"><input type="checkbox"
