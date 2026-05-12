@@ -11,6 +11,10 @@
     
     <link rel="canonical" href="https://student2student.be/">
     
+    <link rel="alternate" hreflang="nl" href="https://student2student.be/">
+    <link rel="alternate" hreflang="fr" href="https://student2student.be/fr.html">
+    <link rel="alternate" hreflang="x-default" href="https://student2student.be/">
+    
     <meta property="og:title" content="Bijles in Halle & Jette | Wiskunde, Wetenschappen & Talen">
     <meta property="og:description" content="Kwalitatieve bijles in regio Halle en Jette door academische studenten. Persoonlijke begeleiding aan huis voor een vast tarief.">
     <meta property="og:image" content="https://student2student.be/favicon.png">
@@ -43,6 +47,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+
         .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; margin-top: 40px; }
         .step-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .step-card i { font-size: 2.5rem; color: #2563eb; margin-bottom: 20px; }
@@ -64,6 +71,10 @@
         .faq-section { max-width: 800px; margin: 40px auto 0; text-align: left; }
         .faq-item { background: white; margin-bottom: 15px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         .faq-item h4 { color: #2563eb; margin-bottom: 8px; font-size: 1.1rem;}
+
+        /* Schone styling voor Tarieven lijst */
+        .price-features { text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5; }
+        .price-features .highlight { color: #e63946; font-weight: bold; margin-top: 5px; }
 
         @media (max-width: 768px) {
             .hero-content { padding: 0 15px; box-sizing: border-box; width: 100%; overflow-x: hidden; }
@@ -155,7 +166,7 @@
             <div class="card">
                 <h3>Individuele Bijles 🎯</h3>
                 <p>De ultieme 1-op-1 begeleiding voor maximale progressie. Wij komen naar jullie toe voor bijles in de vertrouwde thuisomgeving.</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
+                <ul class="price-features">
                     <li><strong>100% Persoonlijk:</strong> Volledige focus op de eigen struikelblokken.</li>
                     <li><strong>Eigen tempo:</strong> Ruimte voor extra uitleg zonder druk.</li>
                     <li><strong>Flexibel:</strong> Planning afgestemd op jullie agenda.</li>
@@ -168,11 +179,11 @@
                 <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2563eb; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; white-space: nowrap;">Nieuw Concept</div>
                 <h3>Duo Boost Pakket 🚀</h3>
                 <p>Samen met een vriend(in) of klasgenoot de leerstof van het vorige trimester beheersen! Interactiever, minder saai en een gezonde competitie.</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
+                <ul class="price-features">
                     <li><strong>Locatie:</strong> Bij de tutor in Halle</li>
                     <li><strong>Formaat:</strong> Blokken van 2 uur</li>
                     <li><strong>Vakken:</strong> Wiskunde, Wetenschappen & Talen</li>
-                    <li style="color: #e63946; font-weight: bold; margin-top: 5px;">Let op: Plek voor slechts 1 duo (First come, first served!)</li>
+                    <li class="highlight">Let op: Plek voor slechts 1 duo (First come, first served!)</li>
                 </ul>
                 <p class="price">€20 / uur <span style="font-size: 1rem; color: #666; font-weight: normal;">per kind</span></p>
             </div>
@@ -249,14 +260,14 @@
             <div class="form-group">
                 <label>Voor welke vakken is er hulp nodig? * (Meerdere keuzes mogelijk)</label>
                 <div class="checkbox-group">
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Chemie"> Chemie</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Biologie"> Biologie</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Talen (NL/FR/EN)"> Talen (NL/FR/EN)</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Aardrijkskunde"> Aardrijkskunde</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Geschiedenis"> Geschiedenis</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Anders"> Anders</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Wiskunde"> Wiskunde</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Fysica"> Fysica</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Chemie"> Chemie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Biologie"> Biologie</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Talen (NL/FR/EN)"> Talen (NL/FR/EN)</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Aardrijkskunde"> Aardrijkskunde</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Geschiedenis"> Geschiedenis</label>
+                    <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Anders"> Anders</label>
                 </div>
             </div>
             
@@ -297,7 +308,7 @@
 
     <script>
         document.getElementById("klantForm").addEventListener("submit", function(e) {
-            const vakken = document.querySelectorAll('input[name="Vakken"]:checked');
+            const vakken = document.querySelectorAll('input[name="Vakken[]"]:checked');
             if (vakken.length === 0) {
                 e.preventDefault();
                 alert("Selecteer alstublieft minstens één vak waarvoor hulp nodig is.");
