@@ -3,233 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Bijlesgever | Student2Student</title>
+    <title>Word Bijlesgever in Halle & Jette | Student2Student</title>
+    <meta name="description" content="Word bijlesgever bij Student2Student in Halle & Jette. Geef bijles op flexibele uren en verdien een sterke vergoeding als universiteitsstudent.">
     <link rel="canonical" href="https://student2student.be/vacatures.html">
+    
+    <meta property="og:title" content="Word Bijlesgever | Student2Student">
+    <meta property="og:description" content="Flexibele bijlesjobs voor universiteitsstudenten in Halle & Jette.">
+    <meta property="og:image" content="https://student2student.be/favicon.png">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE6LKS09ZY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TE6LKS09ZY');
+    </script>
+
     <style>
-        .vacature-section { padding: 80px 0; max-width: 1000px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
-        .vacature-title { text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px; font-weight: 800; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
-        .job-card { background: #FFFFFF; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
-        .job-card:hover { transform: translateY(-5px); }
-        .job-card-icon { font-size: 2.5rem; margin-bottom: 15px; }
-        .job-card h3 { font-size: 1.1rem; color: #1e293b; margin-bottom: 10px; }
-        .job-card p { color: #666666; font-size: 0.95rem; }
-        .profile-bg { background-color: #FFFFFF; }
-        .checklist { list-style: none; max-width: 800px; margin: 0 auto; }
-        .checklist li { position: relative; padding-left: 35px; margin-bottom: 20px; font-size: 1.05rem; color: #333333; }
-        .checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #2563eb; font-size: 1.2rem; font-weight: bold; }
-        .application-text { text-align: center; margin-bottom: 40px; color: #666666; }
-        .form-container { background: #FFFFFF; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 700px; margin: 0 auto; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
-        .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"], .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; transition: border-color 0.2s; font-family: 'Inter', sans-serif;}
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #2563eb; }
-        .form-group textarea { resize: vertical; min-height: 120px; }
-        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-        .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333;}
-        .checkbox-item input { margin-right: 10px; width: auto; }
-        .submit-btn-job { background-color: #2563eb; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.1rem; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: background-color 0.2s; margin-top: 10px; }
-        .submit-btn-job:hover { background-color: #1d4ed8; }
-        @media (max-width: 768px) { .checkbox-group { grid-template-columns: 1fr; } .form-container { padding: 25px; } }
-    </style>
-</head>
-<body>
-
-    <header>
-        <a href="index.html" style="text-decoration: none; color: inherit;"><div class="logo">Student<span>2</span>Student</div></a>
-        <div class="header-right">
-            <div class="lang-switch">
-                <a href="vacatures.html" class="active">NL</a>
-                <span>|</span>
-                <a href="vacatures-fr.html">FR</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html#over">Over ons</a></li>
-                    <li><a href="index.html#werkwijze">Werkwijze</a></li>
-                    <li><a href="index.html#tarieven">Tarieven</a></li>
-                    <li><a href="vacatures.html">Vacatures</a></li>
-                    <li><a href="index.html#contact" class="btn-small">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-socials">
-                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Word Bijlesgever bij Student2Student 🚀</h1>
-            <p>Gebruik je academische kennis, begeleid leerlingen naar betere resultaten en verdien een uitstekend, vast loon op tijden die jou uitkomen.</p>
-        </div>
-    </section>
-
-    <section class="vacature-section" style="background-color: #F8F9FA;">
-        <h2 class="vacature-title">Jouw voordelen op een rij:</h2>
-        <div class="cards-grid">
-            <div class="job-card">
-                <div class="job-card-icon">💰</div>
-                <h3>Duidelijke vergoeding</h3>
-                <p>Een vast loon van €18 per uur.</p>
-            </div>
-            <div class="job-card">
-                <div class="job-card-icon">🗓️</div>
-                <h3>100% Flexibiliteit</h3>
-                <p>Jij bent de baas over je eigen agenda. Jij bepaalt hoeveel uren je per week werkt en wanneer je beschikbaar bent.</p>
-            </div>
-            <div class="job-card">
-                <div class="job-card-icon">🛑</div>
-                <h3>Geen administratie</h3>
-                <p>Jij focust puur op het voorbereiden en geven van de les. Wij zorgen voor de marketing, de klantenwerving en de intakes.</p>
-            </div>
-            <div class="job-card">
-                <div class="job-card-icon">📍</div>
-                <h3>Werken in jouw buurt</h3>
-                <p>Je geeft fysiek les bij de leerling thuis. Wij zijn actief in regio Halle, Jette en omliggende gemeenten.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="profile-bg">
-        <div class="vacature-section">
-            <h2 class="vacature-title">Jouw profiel:</h2>
-            <ul class="checklist">
-                <li>Je bent een gemotiveerde universiteitsstudent.</li>
-                <li>Je blinkt uit in de vakken die je wilt doceren.</li>
-                <li>Je kunt leerstof op een heel heldere en geduldige manier uitleggen.</li>
-                <li>Afspraak is afspraak: Je bent stipt, betrouwbaar en communiceert vlot.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="vacature-section" style="background-color: #F8F9FA;">
-        <h2 class="vacature-title">Klaar om te starten?</h2>
-        <p class="application-text">Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op.</p>
-        
-        <div class="form-container">
-            <form action="https://formspree.io/f/mvzabzqg" method="POST">
-                <input type="hidden" name="_next" value="https://student2student.be/bedankt.html">
-                <input type="hidden" name="_subject" value="Nieuwe Sollicitatie (Bijlesgever)">
-                
-                <div class="form-group">
-                    <label for="naam">Naam en Voornaam *</label>
-                    <input type="text" id="naam" name="Naam" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">E-mailadres *</label>
-                    <input type="email" id="email" name="Email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="telefoon">Telefoonnummer *</label>
-                    <input type="tel" id="telefoon" name="Telefoon" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="studie">Huidige studie + in welk jaar zit je? *</label>
-                    <input type="text" id="studie" name="Studie" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Taalkennis *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="radio" name="Tweetalig" value="Ja, vloeiend NL en FR" required> Ik spreek vloeiend Nederlands én Frans</label>
-                        <label class="checkbox-item"><input type="radio" name="Tweetalig" value="Enkel NL"> Ik spreek enkel Nederlands vlot genoeg voor bijles</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Welke vakken wil je geven?</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Chemie"> Chemie</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Frans"> Frans</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Engels"> Engels</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Nederlands"> Nederlands</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Aardrijkskunde"> Aardrijkskunde</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Geschiedenis"> Geschiedenis</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="niveau">Voor welk niveau/leeftijd wil je lesgeven? *</label>
-                    <input type="text" id="niveau" name="Niveau" placeholder="Bv. Lagere school, 1e-4e middelbaar" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Welke dagen ben je beschikbaar?</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Maandag"> Maandag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Dinsdag"> Dinsdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Woensdag"> Woensdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Donderdag"> Donderdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Vrijdag"> Vrijdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zaterdag"> Zaterdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zondag"> Zondag</label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="uren">Tussen welke uren ben je op die dagen meestal beschikbaar? *</label>
-                    <input type="text" id="uren" name="Beschikbaarheid_Uren" placeholder="Bv. Doordeweeks na 16u, in het weekend hele dag" required>
-                </div>
-
-                <div class="form-group">
-                    <label>In welke regio's kan je lesgeven?</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Halle"> Halle</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lembeek"> Lembeek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Sint-Pieters-Leeuw"> Sint-Pieters-Leeuw</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ruisbroek"> Ruisbroek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lot"> Lot</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Buizingen"> Buizingen</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Jette"> Jette</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ganshoren"> Ganshoren</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="motivatie">Waarom wil je graag bijles geven via ons? (Motivatie & Ervaring) *</label>
-                    <textarea id="motivatie" name="Motivatie" required placeholder="Vertel ons kort waarom jij een goede match bent voor het team."></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn-job">Verstuur Sollicitatie</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Locatie & Contact</h3>
-                <p><strong>Student2Student</strong></p>
-                <p>Regio Halle & Jette</p>
-                <p style="margin-top: 15px;">
-                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
-                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
-                        0465 97 10 99
-                    </a>
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>Volg ons</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2026 Student2Student. | <a href="privacy.html" style="color: inherit;">Privacybeleid</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+        .vacature-section { padding: 80px 0; max-width: 1000px;
