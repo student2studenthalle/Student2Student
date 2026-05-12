@@ -8,6 +8,9 @@
     <meta name="description" content="Word bijlesgever bij Student2Student in Halle & Jette. Geef bijles op flexibele uren en verdien een vast loon als universiteitsstudent.">
     <link rel="canonical" href="https://student2student.be/vacatures.html">
     
+    <link rel="alternate" hreflang="nl" href="https://student2student.be/vacatures.html">
+    <link rel="alternate" hreflang="fr" href="https://student2student.be/vacatures-fr.html">
+    
     <meta property="og:title" content="Word Bijlesgever | Student2Student">
     <meta property="og:description" content="Flexibele bijlesjobs voor universiteitsstudenten in Halle & Jette.">
     <meta property="og:image" content="https://student2student.be/favicon.png">
@@ -26,6 +29,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+
         .vacature-section { padding: 80px 0; max-width: 1000px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
         .vacature-title { text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px; font-weight: 800; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
@@ -174,14 +180,14 @@
                 <div class="form-group">
                     <label>Welke vakken wil je geven? *</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Wiskunde"> Wiskunde</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Fysica"> Fysica</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Chemie"> Chemie</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Frans"> Frans</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Engels"> Engels</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Nederlands"> Nederlands</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Aardrijkskunde"> Aardrijkskunde</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Vakken" value="Geschiedenis"> Geschiedenis</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Wiskunde"> Wiskunde</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Fysica"> Fysica</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Chemie"> Chemie</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Frans"> Frans</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Engels"> Engels</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Nederlands"> Nederlands</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Aardrijkskunde"> Aardrijkskunde</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Vakken[]" value="Geschiedenis"> Geschiedenis</label>
                     </div>
                 </div>
 
@@ -193,13 +199,13 @@
                 <div class="form-group">
                     <label>Welke dagen ben je beschikbaar?</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Maandag"> Maandag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Dinsdag"> Dinsdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Woensdag"> Woensdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Donderdag"> Donderdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Vrijdag"> Vrijdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zaterdag"> Zaterdag</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen" value="Zondag"> Zondag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Maandag"> Maandag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Dinsdag"> Dinsdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Woensdag"> Woensdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Donderdag"> Donderdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Vrijdag"> Vrijdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Zaterdag"> Zaterdag</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Beschikbaarheid_Dagen[]" value="Zondag"> Zondag</label>
                     </div>
                 </div>
                 
@@ -213,18 +219,18 @@
                     
                     <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px; margin-top: 10px; color: #1e293b;">Regio Halle</p>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Halle"> Halle</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lembeek"> Lembeek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Sint-Pieters-Leeuw"> Sint-Pieters-Leeuw</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ruisbroek"> Ruisbroek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lot"> Lot</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Buizingen"> Buizingen</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Halle"> Halle</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Lembeek"> Lembeek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Sint-Pieters-Leeuw"> Sint-Pieters-Leeuw</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Ruisbroek"> Ruisbroek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Lot"> Lot</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Buizingen"> Buizingen</label>
                     </div>
                     
                     <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px; margin-top: 10px; color: #1e293b;">Regio Brussel</p>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Jette"> Jette</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ganshoren"> Ganshoren</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Jette"> Jette</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Ganshoren"> Ganshoren</label>
                     </div>
                 </div>
 
@@ -260,7 +266,7 @@
                 <h3>Volg ons</h3>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/student2studenthalle/" target="_blank" rel="noopener noreferrer" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" rel="noopener noreferrer" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
@@ -271,8 +277,8 @@
 
     <script>
         document.getElementById("jobForm").addEventListener("submit", function(e) {
-            const vakken = document.querySelectorAll('input[name="Vakken"]:checked');
-            const regio = document.querySelectorAll('input[name="Regio"]:checked');
+            const vakken = document.querySelectorAll('input[name="Vakken[]"]:checked');
+            const regio = document.querySelectorAll('input[name="Regio[]"]:checked');
 
             if (vakken.length === 0) {
                 e.preventDefault();
@@ -286,7 +292,6 @@
                 return;
             }
 
-            // Google Analytics tracking voor sollicitaties
             if (typeof gtag === 'function') {
                 gtag('event', 'job_application_submit', {
                   'event_category': 'recruitment',
