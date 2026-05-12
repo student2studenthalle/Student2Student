@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Particuliers à Hal & Jette | Sciences, Maths & Langues</title>
+    <meta name="description" content="Cours particuliers de qualité dans la région de Hal et Jette par des étudiants universitaires. Accompagnement personnel à domicile à un tarif fixe via Student2Student.">
+    <meta name="keywords" content="Cours particuliers Hal, Jette, Maths, Langues, Student2Student, Équipe étudiants universitaires">
+    <meta name="author" content="L'équipe Student2Student">
+    <link rel="canonical" href="https://student2student.be/fr.html">
+    
+    <meta property="og:title" content="Cours Particuliers à Hal & Jette | Sciences, Maths & Langues">
+    <meta property="og:description" content="Cours particuliers de qualité dans la région de Hal et Jette par des étudiants universitaires. Accompagnement à domicile à un tarif fixe.">
+    <meta property="og:image" content="https://student2student.be/favicon.png">
+    <meta property="og:url" content="https://student2student.be/fr.html">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Student2Student",
+      "url": "https://student2student.be",
+      "telephone": "+32465971099",
+      "areaServed": ["Hal", "Jette", "Leeuw-Saint-Pierre", "Lembeek", "Ruisbroek", "Lot", "Buizingen", "Ganshoren"],
+      "description": "Cours particuliers de qualité dans la région de Hal et Jette par des étudiants universitaires."
+    }
+    </script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE6LKS09ZY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -8,24 +39,7 @@
       gtag('js', new Date());
       gtag('config', 'G-TE6LKS09ZY');
     </script>
-    <link rel="canonical" href="https://student2student.be/fr.html">
-    <meta property="og:title" content="Cours particuliers de qualité à Hal & Jette | Student2Student">
-    <meta property="og:description" content="Cours particuliers de qualité dans la région de Hal et Jette par des étudiants universitaires. Accompagnement à domicile à un tarif fixe.">
-    <meta property="og:image" content="https://student2student.be/favicon.png">
-    <meta property="og:url" content="https://student2student.be/fr.html">
-    <meta property="og:type" content="website">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours Particuliers Sciences, Maths & Langues | Student2Student</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <meta name="description" content="Cours particuliers de qualité dans la région de Hal et Jette par des étudiants universitaires. Accompagnement personnel à domicile à un tarif fixe via Student2Student.">
-    <meta name="keywords" content="Cours particuliers Hal, Jette, Maths, Langues, Student2Student, Équipe étudiants universitaires">
-    <meta name="author" content="L'équipe Student2Student">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; margin-top: 40px; }
         .step-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -35,38 +49,33 @@
         .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px; }
         .btn-secondary { background: transparent; border: 2px solid #FFFFFF; color: #FFFFFF; padding: 12px 30px; border-radius: 5px; font-weight: bold; text-decoration: none; transition: 0.3s; font-size: 1.1rem; }
         .btn-secondary:hover { background: #FFFFFF; color: #1e293b; }
+        
+        .hero-subtext { font-size: 0.9rem; margin-top: 5px; opacity: 0.9; }
+        .badge-new { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2563eb; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; white-space: nowrap; }
+        .price-list { text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5; }
+        .price-alert { color: #e63946; font-weight: bold; margin-top: 5px; }
+        .price-note { font-size: 1rem; color: #666; font-weight: normal; }
 
-        /* Styling voor formulieren en checkboxes op de homepage */
         .form-group { margin-bottom: 20px; text-align: left; }
-        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #1e293b; font-size: 0.95rem; }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; }
         .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 5px; margin-bottom: 15px;}
         .checkbox-item { display: flex; align-items: center; font-weight: normal; color: #333333; font-size: 0.95rem; margin: 0; }
         .checkbox-item input { margin-right: 8px; width: auto !important; margin-bottom: 0 !important; }
 
+        .faq-container { max-width: 800px; margin: 0 auto; text-align: left; }
+        .faq-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .faq-item h4 { color: #1e293b; margin-bottom: 10px; font-size: 1.1rem; }
+        .faq-item p { color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0; }
+        
+        .whatsapp-btn { background-color: #25D366; color: white; display: inline-block; padding: 12px 25px; border-radius: 5px; font-weight: bold; text-decoration: none; margin-top: 15px; transition: 0.3s; border: none; font-size: 1.1rem;}
+        .whatsapp-btn:hover { background-color: #1ebe5d; }
+
         @media (max-width: 768px) {
-            .hero-content {
-                padding: 0 15px;
-                box-sizing: border-box;
-                width: 100%;
-                overflow-x: hidden;
-            }
-            .hero-content h1 {
-                font-size: 2.2rem !important;
-                line-height: 1.2;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                hyphens: auto;
-            }
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-            }
-            .btn-main, .btn-secondary {
-                width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-            }
+            .hero-content { padding: 0 15px; box-sizing: border-box; width: 100%; overflow-x: hidden; }
+            .hero-content h1 { font-size: 2.2rem !important; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word; hyphens: auto; }
+            .hero-buttons { flex-direction: column; width: 100%; padding: 0; }
+            .btn-main, .btn-secondary, .whatsapp-btn { width: 100%; text-align: center; box-sizing: border-box; }
             .checkbox-group { grid-template-columns: 1fr; }
         }
     </style>
@@ -90,8 +99,8 @@
                 </ul>
             </nav>
             <div class="header-socials">
-                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/student2studenthalle/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </header>
@@ -99,8 +108,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Des cours de qualité par des universitaires.</h1>
-            <p>Notre équipe d'étudiants motivés donne des cours en <strong>Maths, Sciences, Langues & Histoire</strong>.</p>
-            <p style="font-size: 0.9rem; margin-top: -10px; opacity: 0.9;">Pour le primaire et secondaire dans la région de Hal & Jette</p>
+            <p>Notre équipe d'étudiants motivés donne des cours en<br><strong>Maths, Sciences, Langues & Histoire</strong>.</p>
+            <p class="hero-subtext">Pour le primaire et secondaire<br>dans la région de Hal & Jette</p>
             
             <div class="hero-buttons">
                 <a href="#contact" class="btn-main">Trouvez un Tuteur</a>
@@ -117,144 +126,12 @@
                 <p>Notre équipe aide les élèves dans les matières où ils bloquent. Cela va des sciences exactes comme <strong>les Mathématiques, la Physique et la Chimie</strong>, aux <strong>Langues, la Géographie et l'Histoire</strong>. Nous offrons un soutien empathique axé sur la confiance en soi.</p>
             </div>
             <div class="stats">
-                <div class="stat-card"><strong>Tuteurs</strong> académiques</div>
-                <div class="stat-card"><strong>Région</strong> Hal & Jette</div>
+                <div class="stat-card"><strong>20+ élèves</strong> aidés</div>
+                <div class="stat-card"><strong>Réponse rapide</strong> sous 48h</div>
             </div>
         </div>
     </section>
 
     <section id="werkwijze" class="bg-light">
         <div class="container">
-            <h2 style="text-align: center;">Comment ça marche ?</h2>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <i class="fas fa-pen-to-square"></i>
-                    <h3>1. Demande</h3>
-                    <p>Vous remplissez le formulaire avec les coordonnées, le niveau et les matières de l'élève.</p>
-                </div>
-                <div class="step-card">
-                    <i class="fas fa-phone-volume"></i>
-                    <h3>2. Le profil idéal</h3>
-                    <p>Nous cherchons le tuteur parfait dans notre équipe et vous contactons sous 48h.</p>
-                </div>
-                <div class="step-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>3. Démarrage</h3>
-                    <p>Notre tuteur se déplace chez vous et l'accompagnement personnalisé commence !</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tarieven" class="container">
-        <h2>Tarifs</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Cours Individuel 🎯</h3>
-                <p>L'accompagnement 100% personnalisé pour une progression maximale. Nous nous déplaçons chez vous pour étudier au calme.</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
-                    <li><strong>100% Personnel :</strong> Focus total sur les difficultés de l'élève.</li>
-                    <li><strong>Propre rythme :</strong> Explications adaptées sans pression.</li>
-                    <li><strong>Flexible :</strong> Planning adapté à votre agenda.</li>
-                    <li><strong>Méthode :</strong> Accent mis sur l'organisation et la méthode de travail.</li>
-                </ul>
-                <p class="price">24 € / h</p>
-            </div>
-            
-            <div class="card" style="border: 2px solid #2563eb; position: relative;">
-                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #2563eb; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; white-space: nowrap;">Nouveau Concept</div>
-                <h3>Pack Duo Boost 🚀</h3>
-                <p>Maîtrisez la matière avec un ami ou camarade de classe ! Compétition saine et apprentissage interactif (moins ennuyeux à deux).</p>
-                <ul style="text-align: left; margin: 15px 0; font-size: 0.95rem; color: #666; padding-left: 20px; line-height: 1.5;">
-                    <li><strong>Lieu :</strong> Chez le tuteur à Hal</li>
-                    <li><strong>Format :</strong> Blocs de 2 heures</li>
-                    <li><strong>Matières :</strong> Maths, Sciences & Langues</li>
-                    <li style="color: #e63946; font-weight: bold; margin-top: 5px;">Attention : Place pour un seul duo (Premier arrivé, premier servi !)</li>
-                </ul>
-                <p class="price">20 € / h <span style="font-size: 1rem; color: #666; font-weight: normal;">par enfant</span></p>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="container">
-        <h2 style="text-align: center;">Avis</h2>
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"À l'écoute et très gentil"</p>
-                <p class="review-author">- Nadya Azzair</p>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★☆</div>
-                <p class="review-text">"Très contente il explique très bien et mon fils est super content"</p>
-                <p class="review-author">- Maria Fernanda Rodrigues Fernandes</p>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p class="review-text">"Patient et ponctuel, a l'écoute et gentil."</p>
-                <p class="review-author">- Stylianos Laskaris</p>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 35px;">
-            <a href="https://www.google.com/search?q=Student2Student+Halle" target="_blank" class="btn-main">Voir sur Google Maps</a>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Trouvez un Tuteur (Demande)</h2>
-        <form action="https://formspree.io/f/mqeywpaz" method="POST">
-            <input type="hidden" name="_next" value="https://student2student.be/bedankt.html">
-            <input type="hidden" name="_subject" value="Nouvelle Demande de Cours (Client)">
-            
-            <input type="text" name="Nom_Parent" placeholder="Nom du parent" required>
-            <input type="text" name="Nom_Eleve" placeholder="Nom de l'élève *" required>
-            <input type="text" name="Niveau_Annee" placeholder="Année d'étude / Niveau (Ex. 4ème secondaire) *" required>
-            <input type="email" name="Email" placeholder="Adresse e-mail *" required>
-            <input type="tel" name="Telefoon" placeholder="Numéro de téléphone (optionnel)">
-            
-            <div class="form-group">
-                <label>Pour quelles matières avez-vous besoin d'aide ? * (Plusieurs choix possibles)</label>
-                <div class="checkbox-group">
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Mathématiques"> Mathématiques</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Physique"> Physique</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Chimie"> Chimie</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Biologie"> Biologie</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Langues (FR/NL/EN)"> Langues (FR/NL/EN)</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Géographie"> Géographie</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Histoire"> Histoire</label>
-                    <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Autre"> Autre</label>
-                </div>
-            </div>
-            
-            <textarea name="Message" placeholder="Quelles sont les difficultés exactes de l'élève ? (Besoins spécifiques) *" required></textarea>
-            <button type="submit" class="btn-main">Envoyer la demande</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Lieu & Contact</h3>
-                <p><strong>Student2Student</strong></p>
-                <p>Région Hal & Jette</p>
-                <p style="margin-top: 15px;">
-                    <a href="tel:+32465971099" style="color: inherit; text-decoration: none; font-weight: 600;">
-                        <i class="fas fa-phone-alt" style="margin-right: 8px; color: #2563eb;"></i>
-                        0465 97 10 99
-                    </a>
-                </p>
-            </div>
-            <div class="footer-section">
-                <h3>Suivez-nous</h3>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/student2studenthalle/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61565054590046" target="_blank" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2026 Student2Student. | <a href="privacy.html" style="color: inherit;">Politique de confidentialité</a></p>
-        </div>
-    </footer>
-</body>
-</html>
+            <h2 style="text-align: center;">
