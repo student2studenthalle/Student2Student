@@ -8,6 +8,9 @@
     <meta name="description" content="Devenez tuteur chez Student2Student à Hal & Jette. Donnez des cours avec des horaires flexibles et gagnez un salaire fixe en tant qu'étudiant universitaire.">
     <link rel="canonical" href="https://student2student.be/vacatures-fr.html">
     
+    <link rel="alternate" hreflang="nl" href="https://student2student.be/vacatures.html">
+    <link rel="alternate" hreflang="fr" href="https://student2student.be/vacatures-fr.html">
+    
     <meta property="og:title" content="Devenez Tuteur | Student2Student">
     <meta property="og:description" content="Des emplois de tutorat flexibles pour les étudiants universitaires à Hal & Jette.">
     <meta property="og:image" content="https://student2student.be/favicon.png">
@@ -26,6 +29,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* Smooth Scroll */
+        html { scroll-behavior: smooth; }
+
         .vacature-section { padding: 80px 0; max-width: 1000px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
         .vacature-title { text-align: center; font-size: 2rem; color: #1e293b; margin-bottom: 40px; font-weight: 800; }
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
@@ -174,14 +180,14 @@
                 <div class="form-group">
                     <label>Quelles matières souhaitez-vous enseigner ? *</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Wiskunde"> Mathématiques</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Fysica"> Physique</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Chemie"> Chimie</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Frans"> Français</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Engels"> Anglais</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Nederlands"> Néerlandais</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Géographie"> Géographie</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Matieres" value="Histoire"> Histoire</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Wiskunde"> Mathématiques</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Fysica"> Physique</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Chemie"> Chimie</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Frans"> Français</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Engels"> Anglais</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Nederlands"> Néerlandais</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Géographie"> Géographie</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Matieres[]" value="Histoire"> Histoire</label>
                     </div>
                 </div>
 
@@ -193,13 +199,13 @@
                 <div class="form-group">
                     <label>Quels jours êtes-vous disponible ?</label>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Lundi"> Lundi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Mardi"> Mardi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Mercredi"> Mercredi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Jeudi"> Jeudi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Vendredi"> Vendredi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Samedi"> Samedi</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours" value="Dimanche"> Dimanche</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Lundi"> Lundi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Mardi"> Mardi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Mercredi"> Mercredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Jeudi"> Jeudi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Vendredi"> Vendredi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Samedi"> Samedi</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Disponibilite_Jours[]" value="Dimanche"> Dimanche</label>
                     </div>
                 </div>
                 
@@ -213,18 +219,18 @@
                     
                     <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px; margin-top: 10px; color: #1e293b;">Région de Hal</p>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Halle"> Hal</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lembeek"> Lembeek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Sint-Pieters-Leeuw"> Leeuw-Saint-Pierre</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ruisbroek"> Ruisbroek</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Lot"> Lot</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Buizingen"> Buizingen</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Halle"> Hal</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Lembeek"> Lembeek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Sint-Pieters-Leeuw"> Leeuw-Saint-Pierre</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Ruisbroek"> Ruisbroek</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Lot"> Lot</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Buizingen"> Buizingen</label>
                     </div>
                     
                     <p style="font-size: 0.95rem; font-weight: bold; margin-bottom: 5px; margin-top: 10px; color: #1e293b;">Région de Bruxelles</p>
                     <div class="checkbox-group">
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Jette"> Jette</label>
-                        <label class="checkbox-item"><input type="checkbox" name="Regio" value="Ganshoren"> Ganshoren</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Jette"> Jette</label>
+                        <label class="checkbox-item"><input type="checkbox" name="Regio[]" value="Ganshoren"> Ganshoren</label>
                     </div>
                 </div>
 
@@ -271,8 +277,8 @@
 
     <script>
         document.getElementById("jobForm").addEventListener("submit", function(e) {
-            const vakken = document.querySelectorAll('input[name="Matieres"]:checked');
-            const regio = document.querySelectorAll('input[name="Regio"]:checked');
+            const vakken = document.querySelectorAll('input[name="Matieres[]"]:checked');
+            const regio = document.querySelectorAll('input[name="Regio[]"]:checked');
 
             if (vakken.length === 0) {
                 e.preventDefault();
@@ -286,7 +292,6 @@
                 return;
             }
 
-            // Google Analytics tracking pour sollicitaties
             if (typeof gtag === 'function') {
                 gtag('event', 'job_application_submit', {
                   'event_category': 'recruitment',
